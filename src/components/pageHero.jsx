@@ -45,7 +45,7 @@ function PageHero({ children, background }) {
                     </div>
                     {children}
 
-                    <div className='flex flex-row items-center space-x-2 mt-[100px] tb:mt-[200px]'>
+                    <div className='flex flex-row items-center space-x-2 mt-[60px] md:mt-[100px] tb:mt-[200px]'>
                         <img src='/assets/selectedEllipse.png' className='border-[1px] border-[#E8C229] rounded-[1000px] p-[2px]' />
                         <img src='/assets/ellipse.png' className='border-[1px] border-[#ddd] rounded-[1000px] md:border-[0px]' />
                         <img src='/assets/ellipse.png' className='border-[1px] border-[#ddd] rounded-[1000px] md:border-[0px]' />

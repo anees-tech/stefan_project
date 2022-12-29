@@ -11,7 +11,7 @@ const Homepage = () => {
                         <span className='text-white text-[55px] md:text-[75px] font-bold leading-none'>ALL YOU NEED <br />TO BE EPIC</span>
                         <p className='max-w-[550px] text-[14px] md:text-[16px] text-white mt-5'>If your skin has started to show wear and tear from sun, aging, acne or other skin conditions there is much that can be done.</p>
                     </div>
-                    <div className='flex flex-row flex-wrap justify-center md:justify-start md:pl-20 mt-20'>
+                    <div className='flex flex-row flex-wrap justify-center md:justify-start md:pl-20 mt-10 md:mt-20'>
                         <button className='bg-white text-[#796AB8] rounded-lg py-3 px-7 w-[249.61px] font-bold hover:bg-[#ddd] mr-[30px] mb-[30px]'>VIEW TREATMENTS</button>
                         <button className='bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-[#fff] rounded-lg py-3 px-7 w-[249.61px] font-bold hover:bg-gradient-to-l mr-[30px] mb-[30px]'>VIEW PRODUCTS</button>
                     </div>
