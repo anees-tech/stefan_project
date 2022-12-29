@@ -4,7 +4,7 @@ import { BiChevronRight } from "react-icons/bi"
 const Footer = () => {
     return (
         <div
-            className='flex flex-col'
+            className='flex flex-col pl-4 md:pl-[0px]'
             style={{
                 backgroundImage: "url('/assets/footerBackground.png')",
                 backgroundRepeat: "no-repeat",
@@ -14,7 +14,7 @@ const Footer = () => {
                 width: "105%"
             }}>
             <div className='flex flex-row flex-wrap items-start ft:justify-between justify-center'>
-                <div className='flex flex-col items-start mt-[200px] mb-[20px] pl-[100px]'>
+                <div className='flex flex-col items-start mt-[300px] md:mt-[200px] mb-[20px] pl-[60px]'>
                     <p className='text-white max-w-[522px] mb-10'>You will be charged if you don't arrive in time or cancel your appointment within 24 h prior to your booking.</p>
                     <div className='flex flex-row items-center justify-between bg-[#FFFFFF0F] p-3 w-[300px] cursor-pointer'>
                         <div className='flex flex-col items-center justify-center'>

@@ -67,20 +67,20 @@ const Homepage = () => {
                         We can offer your treatments at your house. Just look for the treatment you wish and book your favourite day and hour to get it done.
                         <br /> <br /> <span className='font-bold text-[20px]'>Note! </span><br /> The treatmts at your house tent to be more expensive then in the clinic. For <span className='font-bold'>traveling outside of London </span>will be <span className='font-bold'>additional charges </span> in top of the treatment/s price.
                     </p>
-                    <button className='bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-white font-bold text-[19px] w-[325px] py-3 rounded-lg hover:bg-gradient-to-l'>CHECK TREATMENTS</button>
+                    <button className='bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-white font-bold text-[19px] md:w-[325px] py-3 px-3 rounded-lg hover:bg-gradient-to-l'>CHECK TREATMENTS</button>
                 </div>
             </section>
 
-            <section className='flex flex-col items-center mb-10'>
+            <section className='flex flex-col items-center mb-10 w-full'>
                 <div className='flex flex-col items-center mb-5'>
                     <span className='text-[36px] font-bold mb-2'>PRODUCTS</span>
                     <img src='/assets/colorfulBorder.png' />
                 </div>
                 <div className='flex flex-row items-center w-fit bg-[#FBFBFB] p-3 mb-10'>
-                    <button className='bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-white font-bold text-[22px] w-[225px] px-5 py-3 rounded-lg hover:bg-gradient-to-l'>NEW ARRIVALS</button>
-                    <button className='bg-[#FBFBFB] text-[#000] font-medium text-[22px] w-[225px] px-5 py-3 rounded-lg hover:bg-[#ddd]'>MOST POPULAR</button>
+                    <button className='bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-white font-bold text-[22px] md:w-[225px] px-5 py-3 rounded-lg hover:bg-gradient-to-l'>NEW ARRIVALS</button>
+                    <button className='bg-[#FBFBFB] text-[#000] font-medium text-[22px] md:w-[225px] px-5 py-3 rounded-lg hover:bg-[#ddd]'>MOST POPULAR</button>
                 </div>
-                <div className='flex flex-row flex-wrap items-center justify-center bg-[#FCFCFC] pb-5'>
+                <div className='flex flex-row flex-wrap items-center justify-center w-full bg-[#FCFCFC] pb-5 ml-5'>
                     <img src='/assets/backIcon.png' className='hidden xl:flex cursor-pointer hover:scale-75' />
                     <div className='flex flex-col items-start w-[365px] px-3 py-4 bg-[#E1C75C1A] rounded-[20px] border-[1px] border-[#E1C75C] mr-[50px] mb-[30px] shadow-lg'>
                         <img src='/assets/sunScreen.png' className='h-[100px] md:h-full' />
