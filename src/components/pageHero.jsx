@@ -27,7 +27,7 @@ function PageHero({ children, background }) {
                             <span className='text-[#FFFFFF80] text-[16px] hover:text-white hover:cursor-pointer'>CONTACT US</span>
                             <span className='text-[#FFFFFF80] text-[16px] hover:text-white hover:cursor-pointer'>FAQ</span>
                         </div>
-                        <div className='md:hidden mr-10 flex flex-row items-center space-x-5' >
+                        <div className='md:hidden mr-5 flex flex-row items-center space-x-5' >
                             <img src='/assets/shoppingCartSvg.svg' />
                             {!menuOpen ?
                                 <FaBars size={20} className="cursor-pointer" color='#fff' onClick={() => setMenuOpen(!menuOpen)} />
