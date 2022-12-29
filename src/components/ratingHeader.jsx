@@ -2,7 +2,7 @@ import React from 'react'
 
 const RatingHeader = () => {
     return (
-        <div className='flex flex-row items-center justify-between bg-[#3F3F3F42] w-[93%] rounded-lg px-3 absolute'>
+        <div className='hidden tb:flex flex-row items-center justify-between bg-[#3F3F3F42] w-[93%] rounded-lg px-3 z-10 absolute'>
             <div className='flex flex-row items-center space-x-2'>
                 <img src='/assets/googleIcon.png' />
                 <img src='/assets/stars.png' />
@@ -10,12 +10,12 @@ const RatingHeader = () => {
             </div>
 
             <div className='flex flex-row items-center space-x-4'>
-                <span className='text-white text-[16px]'>support@aztreatments.com</span>
-                <img src='/assets/mailIcon.png' />
-                <span className='text-white text-[16px]'>+44 020 7042 1880</span>
-                <img src='/assets/telephoneIcon.png' />
+                <span className='text-white text-[16px] hover:cursor-pointer' >support@aztreatments.com</span>
+                <img src='/assets/mailIcon.png' className='hover:cursor-pointer' />
+                <span className='text-white text-[16px] hover:cursor-pointer'>+44 020 7042 1880</span>
+                <img src='/assets/telephoneIcon.png' className='hover:cursor-pointer' />
                 <img src='/assets/line.png' />
-                <img src='/assets/shoppingCartIcon.png' />
+                <img src='/assets/shoppingCartIcon.png' className='hover:cursor-pointer' />
             </div>
         </div>
     )
