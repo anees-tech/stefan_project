@@ -9,9 +9,7 @@ function App() {
   return (
     <div className='flex flex-col items-center w-[100%]'>
       <RatingHeader />
-      <PageHero />
       <Homepage />
-      <Footer />
     </div>
   );
 }

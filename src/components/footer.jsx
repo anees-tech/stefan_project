@@ -21,7 +21,7 @@ const Footer = () => {
                             <span className='text-[16px] text-[#E8C229]'>Talk To Our Support</span>
                             <span className='text-white'>+44 7711111111</span>
                         </div>
-                        <img src='/assets/callCenterIcon.png' />
+                        <img src='/assets/callCenterIconSvg.svg' />
                     </div>
                 </div>
 
@@ -107,7 +107,7 @@ const Footer = () => {
             <div
                 className='self-end ft:mr-[100px] pr-[100px]'
                 style={{
-                    backgroundImage: "url('/assets/copyrightBackground.png')",
+                    backgroundImage: "url('/assets/copyrightBackgroundSvg.svg')",
                     backgroundRepeat: "no-repeat",
                     // paddingTop: "51px",
                     height: "51px",
