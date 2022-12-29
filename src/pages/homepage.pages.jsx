@@ -8,8 +8,8 @@ const Homepage = () => {
             <PageHero background={"url('/assets/homepageHeroSvg.svg')"}>
                 <div className='self-start'>
                     <div className='self-start pl-10 md:pl-20 mt-7 w-full'>
-                        <span className='text-white text-[55px] md:text-[75px] font-bold leading-none'>ALL YOU NEED <br />TO BE EPIC</span>
-                        <p className='max-w-[550px] text-[14px] md:text-[16px] text-white mt-5'>If your skin has started to show wear and tear from sun, aging, acne or other skin conditions there is much that can be done.</p>
+                        <span className='text-white text-[45px] md:text-[75px] font-bold leading-none'>ALL YOU NEED <br />TO BE EPIC</span>
+                        <p className='max-w-[550px] text-[13px] md:text-[16px] text-white mt-5'>If your skin has started to show wear and tear from sun, aging, acne or other skin conditions there is much that can be done.</p>
                     </div>
                     <div className='flex flex-row flex-wrap justify-center md:justify-start md:pl-20 mt-10 md:mt-20'>
                         <button className='bg-white text-[#796AB8] rounded-lg py-3 px-7 w-[249.61px] font-bold hover:bg-[#ddd] mr-[30px] mb-[30px]'>VIEW TREATMENTS</button>
