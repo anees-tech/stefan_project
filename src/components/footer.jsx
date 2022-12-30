@@ -3,20 +3,16 @@ import { BiChevronRight } from "react-icons/bi"
 
 const Footer = () => {
     return (
-        <div
-            className='flex flex-col pl-4 md:pl-[0px]'
-            style={{
-                backgroundImage: "url('/assets/footerBackground.png')",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                paddingTop: "78px",
-                height: "100%px",
-                width: "105%"
-            }}>
-            <div className='flex flex-row flex-wrap items-start ft:justify-between justify-center'>
-                <div className='flex flex-col items-start mt-[300px] md:mt-[200px] mb-[20px] pl-[60px]'>
-                    <p className='text-white max-w-[522px] mb-10'>You will be charged if you don't arrive in time or cancel your appointment within 24 h prior to your booking.</p>
-                    <div className='flex flex-row items-center justify-between bg-[#FFFFFF0F] p-3 w-[300px] cursor-pointer'>
+
+        <div className='flex flex-col  relative'>
+            <img src='/assets/footerBackgroundSvg.svg' className='hidden ft:flex w-screen ' />
+            <div className='self-center my-[20px] ft:my-[0px] ft:absolute top-[15px] left-[20px]'>
+                <img src='/assets/logoSvg2.svg' className='w-[90%] md:w-full' />
+            </div>
+            <div className='flex flex-row flex-wrap items-center bg-[#3F3F3F] p-3 ft:bg-transparent ft:absolute bottom-[10px] justify-center ft:justify-between w-full'>
+                <div className='flex flex-col items-center ml-10 ft:mt-7'>
+                    <p className='text-white text-[12px] text-[14px] max-w-[522px] mb-10'>You will be charged if you don't arrive in time or cancel your appointment within 24 h prior to your booking.</p>
+                    <div className='flex flex-row items-center justify-between bg-[#FFFFFF0F] p-3 w-[300px] cursor-pointer mb-10'>
                         <div className='flex flex-col items-center justify-center'>
                             <span className='text-[16px] text-[#E8C229]'>Talk To Our Support</span>
                             <span className='text-white'>+44 7711111111</span>
@@ -25,13 +21,13 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='pr-[100px] flex flex-row flex-wrap justify-center space-x-20'>
-                    <div className='flex flex-col items-start text-start'>
+                <div className=' flex flex-row flex-wrap  justify-center w-full ft:w-fit md:mr-[100px] md:mb-[100px]'>
+                    <div className='flex flex-col items-start text-start mr-7'>
                         <div className='mb-7'>
-                            <h1 className='text-white font-semibold text-[17px]'>CUSTOMER CARE</h1>
-                            <hr className='w-[75px] h-[3px] mt-1 bg-[#E8C229]' />
+                            <h1 className='text-white font-semibold text-[14px] md:text-[17px]'>CUSTOMER CARE</h1>
+                            <hr className='w-[75px] h-[2px] mt-1 bg-[#E8C229]' />
                         </div>
-                        <div className='text-white text-[15px] flex flex-col items-start space-y-3 ml-[-8px]'>
+                        <div className='text-white text-[13px] md:text-[15px] flex flex-col items-start space-y-3 ml-[-8px]'>
                             <div className='flex flex-row items-center space-x-1 cursor-pointer hover:text-[#E8C229]'>
                                 <BiChevronRight size={20} color="#fff" />
                                 <span>Contact us</span>
@@ -58,12 +54,12 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col items-start text-start'>
+                    <div className='flex flex-col items-start text-start mr-7'>
                         <div className='mb-7'>
-                            <h1 className='text-white font-semibold text-[17px]'>ABOUT US</h1>
-                            <hr className='w-[75px] h-[3px] mt-1 bg-[#E8C229]' />
+                            <h1 className='text-white font-semibold text-[14px] md:text-[17px]'>ABOUT US</h1>
+                            <hr className='w-[75px] h-[2px] mt-1 bg-[#E8C229]' />
                         </div>
-                        <div className='text-white text-[15px] flex flex-col items-start space-y-3 ml-[-8px]'>
+                        <div className='text-white text-[13px] md:text-[15px] flex flex-col items-start space-y-3 ml-[-8px]'>
                             <div className='flex flex-row items-center space-x-1 cursor-pointer hover:text-[#E8C229]'>
                                 <BiChevronRight size={20} color="#fff" />
                                 <span>About us</span>
@@ -78,12 +74,12 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col items-start text-start'>
+                    <div className='flex flex-col items-start text-start md:mr-7'>
                         <div className='mb-7'>
-                            <h1 className='text-white font-semibold text-[17px]'>MY ACCOUNT</h1>
-                            <hr className='w-[75px] h-[3px] mt-1 bg-[#E8C229]' />
+                            <h1 className='text-white font-semibold text-[14px] md:text-[17px]'>MY ACCOUNT</h1>
+                            <hr className='w-[75px] h-[2px] mt-1 bg-[#E8C229]' />
                         </div>
-                        <div className='text-white text-[15px] flex flex-col items-start space-y-3 ml-[-8px]'>
+                        <div className='text-white text-[13px] md:text-[15px] flex flex-col items-start space-y-3 ml-[-8px]'>
                             <div className='flex flex-row items-center space-x-1 cursor-pointer hover:text-[#E8C229]'>
                                 <BiChevronRight size={20} color="#fff" />
                                 <span>Track order</span>
@@ -105,14 +101,8 @@ const Footer = () => {
                 </div>
             </div>
             <div
-                className='self-end ft:mr-[100px] pr-[100px]'
-                style={{
-                    backgroundImage: "url('/assets/copyrightBackgroundSvg.svg')",
-                    backgroundRepeat: "no-repeat",
-                    // paddingTop: "51px",
-                    height: "51px",
-                    width: "720px"
-                }}>
+                className='hidden md:flex self-end absolute bottom-0 mr-[100px]'>
+                <img src='/assets/copyrightBackgroundSvg.svg' />
             </div>
         </div>
     )

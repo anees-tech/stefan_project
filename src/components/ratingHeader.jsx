@@ -2,7 +2,7 @@ import React from 'react'
 
 const RatingHeader = () => {
     return (
-        <div className='hidden tb:flex flex-row items-center justify-between bg-[#3F3F3F42] w-[93%] rounded-lg px-3 z-10 absolute'>
+        <div className='hidden tb:flex flex-row items-center justify-between bg-[#3F3F3F42] w-[89%] rounded-b-lg px-3 z-10 absolute'>
             <div className='flex flex-row items-center space-x-2'>
                 <img src='/assets/googleSvg.svg' />
                 <img src='/assets/starsSvg.svg' />
