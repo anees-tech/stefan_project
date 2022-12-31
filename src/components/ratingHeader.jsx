@@ -23,7 +23,7 @@ const RatingHeader = () => {
                 <span className='text-white text-[16px] hover:cursor-pointer'>+44 020 7042 1880</span>
                 <img src='/assets/telephoneSvg.svg' className='hover:cursor-pointer' />
                 <img src='/assets/line.png' />
-                <img src='/assets/shoppingSvg.svg' className='hover:cursor-pointer' />
+                <img src='/assets/ShoppingSvg.svg' className='hover:cursor-pointer' />
             </div>
         </div >
     )

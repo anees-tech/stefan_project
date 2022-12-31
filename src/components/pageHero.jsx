@@ -31,7 +31,7 @@ function PageHero({ children, background }) {
                                         <span className='hidden md:flex text-white font-medium text-[19px]'>TREATMENTS</span>
                                     </div>
                                     <div className='flex flex-row space-x-3 mr-10'>
-                                        <img src='/assets/shoppingSvg.svg' />
+                                        <img src='/assets/ShoppingSvg.svg' />
                                         {!menuOpen ?
                                             <FaBars size={25} className="cursor-pointer" color='#fff' onClick={() => setMenuOpen(!menuOpen)} />
                                             : <IoMdClose size={30} className="cursor-pointer" color='#fff' onClick={() => setMenuOpen(!menuOpen)} />
@@ -44,7 +44,7 @@ function PageHero({ children, background }) {
                         {menuOpen && <div className='md:hidden bg-[#9686DA] text-[#000] absolute top-0 pt-[70px]  flex flex-col items-center justify-start  px-20 menu h-screen w-full'>
                             <img src='/assets/logoSvg.svg' className=' md:hidden  absolute left-6 top-8' />
                             <div className='tb:hidden mr-5 flex flex-row items-center space-x-5 absolute top-7 right-6' >
-                                <img src='/assets/shoppingSvg.svg' />
+                                <img src='/assets/ShoppingSvg.svg' />
                                 {!menuOpen ?
                                     <FaBars size={20} className="cursor-pointer" color='#fff' onClick={() => setMenuOpen(!menuOpen)} />
                                     : <IoMdClose size={30} className="cursor-pointer" color='#fff' onClick={() => setMenuOpen(!menuOpen)} />
