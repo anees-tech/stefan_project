@@ -25,7 +25,7 @@ function PageHero({ children, background }) {
                                 <span className='text-[#FFFFFF80] text-[16px] border-hidden border-b-[3px] border-b-[#fff] hover:border-solid hover:mb-[-3px] cursor-pointer'>FAQ</span>
                             </div>
                             {!menuOpen &&
-                                <div className='bg-[#9686DA] tb:hidden flex flex-row items-center justify-between fixed top-0 left-0 py-2 pl-3 w-full' >
+                                <div className='bg-[#9686DA] tb:hidden flex flex-row items-center justify-between fixed top-0 left-0 py-3 pt-5 pl-3 w-full' >
                                     <div className='flex flex-row items-center space-x-3'>
                                         <img src='/assets/logoSvg.svg' className='flex ' />
                                         <span className='hidden md:flex text-white font-medium text-[19px]'>TREATMENTS</span>
