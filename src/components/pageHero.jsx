@@ -55,7 +55,7 @@ function PageHero({ children, background }) {
                             <span onClick={() => setMenuOpen(false)} className="text-[#FFFFFF80] text-[16px] mt-3  cursor-pointer border-hidden border-b-[3px] border-b-[#fff] hover:border-solid hover:mb-[-3px] p-1 w-fit flex flex-col items-center">PRODUCTS</span>
                             <span onClick={() => setMenuOpen(false)} className="text-[#FFFFFF80] text-[16px] mt-3  cursor-pointer border-hidden border-b-[3px] border-b-[#fff] hover:border-solid hover:mb-[-3px] p-1 w-fit flex flex-col items-center">CONTACT US</span>
                             <span onClick={() => setMenuOpen(false)} className="text-[#FFFFFF80] text-[16px] mt-3  cursor-pointer border-hidden border-b-[3px] border-b-[#fff] hover:border-solid hover:mb-[-3px] p-1 w-fit flex flex-col items-center">FAQ</span>
-                            <div className='flex flex-col items-center absolute bottom-10'>
+                            <div className='flex flex-col items-center absolute bottom-3'>
                                 <span className='text-white text-[16px] mb-3'>© AZ TREATMENTS 2022</span>
                                 <div className='flex flex-row space-x-4'>
                                     <img src='/assets/instagramSvg.svg' />
