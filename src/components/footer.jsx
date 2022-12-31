@@ -99,6 +99,9 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
+                    <div className='md:hidden bg-gradient-to-r from-[#E1C75C] to-[#C2A013] p-5 w-full'>
+                        <span>Copyright © 2022 AZ Treatments Ltd, All Rights Reserved.</span>
+                    </div>
                 </div>
             </div>
             <div
