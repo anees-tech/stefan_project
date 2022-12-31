@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='hidden ft:flex ft:my-[0px] ft:absolute top-[15px] left-[20px]'>
                 <img src='/assets/logoSvg2.svg' className='w-[90%] md:w-full' />
             </div>
-            <div className='flex flex-row flex-wrap items-center  bg-[#3F3F3F] p-3 ft:bg-transparent ft:absolute bottom-[0px] justify-center ft:justify-between w-full'>
+            <div className='flex flex-row flex-wrap items-center  bg-[#3F3F3F] p-3 px-4 border-t-[5px] border-[#E8C229] ft:border-hidden ft:bg-transparent ft:absolute bottom-[0px] justify-center ft:justify-between w-full'>
                 <div className='flex flex-col items-center ft:ml-10 ft:mt-7 w-full ft:w-fit'>
                     <img src='/assets/logoSvg2.svg' className='w-[90%] md:hidden mb-5' />
                     <p className='text-white text-[12px] text-[14px] max-w-[522px] mb-7 md:mb-10'>You will be charged if you don't arrive in time or cancel your appointment within 24 h prior to your booking.</p>
@@ -99,14 +99,15 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='md:hidden bg-gradient-to-r from-[#E1C75C] to-[#C2A013] p-5 w-full'>
-                        <span>Copyright © 2022 AZ Treatments Ltd, All Rights Reserved.</span>
-                    </div>
+
                 </div>
             </div>
             <div
                 className='hidden md:flex self-end absolute bottom-0 mr-[100px]'>
                 <img src='/assets/copyrightBackgroundSvg.svg' />
+            </div>
+            <div className='md:hidden bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-center p-5 w-full'>
+                <span>Copyright © 2022 AZ Treatments Ltd, All Rights Reserved.</span>
             </div>
         </div>
     )

@@ -11,7 +11,7 @@ function PageHero({ children, background }) {
             <div>
                 <div className='relative  mb-7 w-full'>
                     <img src='/assets/homepageHeroSvg.svg' className='hidden md:flex w-full' />
-                    <div className='bg-[#9686DA] md:bg-transparent flex flex-col items-center  pt-7 md:top-0 md:absolute tb:top-[50px] w-full'>
+                    <div className='bg-[#9686DA] md:bg-transparent flex flex-col items-center  pt-7 pb-2 px-4 md:top-0 md:absolute tb:top-[50px] w-full'>
                         <div className='flex flex-row items-center justify-between w-[90%] mb-10 md:mb-[0px]'>
                             <div className='flex flex-row items-center space-x-3'>
                                 <img src='/assets/logoSvg.svg' className='hidden tb:flex md:ml-[85px]  xxl:absolute left-[100px]' />
@@ -25,12 +25,12 @@ function PageHero({ children, background }) {
                                 <span className='text-[#FFFFFF80] text-[16px] border-hidden border-b-[3px] border-b-[#fff] hover:border-solid hover:mb-[-3px] cursor-pointer'>FAQ</span>
                             </div>
                             {!menuOpen &&
-                                <div className='bg-[#9686DA] tb:hidden flex flex-row items-center justify-between fixed top-0 left-0 py-3 pt-5 pl-3 w-full' >
+                                <div className='bg-[#9686DA] tb:hidden flex flex-row items-center justify-between fixed top-0 left-0 z-20 py-3 px-4 pt-5 w-full' >
                                     <div className='flex flex-row items-center space-x-3'>
                                         <img src='/assets/logoSvg.svg' className='flex ' />
                                         <span className='hidden md:flex text-white font-medium text-[19px]'>TREATMENTS</span>
                                     </div>
-                                    <div className='flex flex-row space-x-3 mr-10'>
+                                    <div className='flex flex-row space-x-3 '>
                                         <img src='/assets/ShoppingSvg.svg' />
                                         {!menuOpen ?
                                             <FaBars size={25} className="cursor-pointer" color='#fff' onClick={() => setMenuOpen(!menuOpen)} />
@@ -41,9 +41,9 @@ function PageHero({ children, background }) {
                             }
 
                         </div>
-                        {menuOpen && <div className='md:hidden bg-[#9686DA] text-[#000] absolute top-0 pt-[70px]  flex flex-col items-center justify-start  px-20 menu h-screen w-full'>
-                            <img src='/assets/logoSvg.svg' className=' md:hidden  absolute left-6 top-8' />
-                            <div className='tb:hidden mr-5 flex flex-row items-center space-x-5 absolute top-7 right-6' >
+                        {menuOpen && <div className='md:hidden bg-[#9686DA] text-[#000] fixed z-20 top-0 pt-[70px]  flex flex-col items-center justify-start menu h-screen w-full'>
+                            <img src='/assets/logoSvg.svg' className=' md:hidden  absolute left-0 top-8 px-4' />
+                            <div className='tb:hidden flex flex-row items-center space-x-5 absolute top-7 right-0 px-4' >
                                 <img src='/assets/ShoppingSvg.svg' />
                                 {!menuOpen ?
                                     <FaBars size={20} className="cursor-pointer" color='#fff' onClick={() => setMenuOpen(!menuOpen)} />
@@ -66,12 +66,14 @@ function PageHero({ children, background }) {
                         </div>}
                         {children}
                         <div className='w-full flex flex-col items-center justify-center pb-5'>
-                            <div className='flex md:hidden flex-row items-center space-x-2 mt-[10px] md:mt-[100px] tb:mt-[200px]'>
-                                {!menuOpen && <BsChevronLeft size={25} className='border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile absolute left-10' />}
-                                <img src='/assets/selectedEllipse.png' className='border-[1px] border-[#E8C229] rounded-[1000px] p-[3px]' />
-                                <img src='/assets/ellipse.png' className='' />
-                                <img src='/assets/ellipse.png' className='' />
-                                {!menuOpen && <BsChevronRight size={25} className='border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile absolute right-10' />}
+                            <div className='flex md:hidden flex-row items-center justify-between space-x-2 mt-[10px] md:mt-[100px] tb:mt-[200px] w-full'>
+                                {!menuOpen && <BsChevronLeft size={25} className='border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' />}
+                                <div className='flex flex-row items-center space-x-3'>
+                                    <img src='/assets/selectedEllipse.png' className='border-[1px] border-[#E8C229] rounded-[1000px] p-[3px]' />
+                                    <img src='/assets/ellipse.png' className='' />
+                                    <img src='/assets/ellipse.png' className='' />
+                                </div>
+                                {!menuOpen && <BsChevronRight size={25} className='border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' />}
 
                             </div>
                         </div>

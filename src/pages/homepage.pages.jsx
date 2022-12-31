@@ -12,7 +12,7 @@ const Homepage = () => {
                 <div className='self-center md:self-start md:ml-[40px]' >
                     <div className='self-center text-center md:text-start md:self-start  md:pl-20 mt-3 md:mt-7 w-full'>
                         <span className='text-white text-[35px] tb:text-[55px] font-bold leading-none'>ALL YOU NEED <br />TO BE EPIC</span>
-                        <p className='max-w-[550px] text-[17px] md:text-[16px] text-white mt-10 px-3 md:px-[0px] md:mt-5'>If your skin has started to show wear and tear from sun, aging, acne or other skin conditions there is much that can be done.</p>
+                        <p className='md:max-w-[550px] text-[17px] md:text-[16px] text-white mt-10 px-0 md:px-[0px] md:mt-5'>If your skin has started to show wear and tear from sun, aging, acne or other skin conditions there is much that can be done.</p>
                     </div>
                     <div className='flex flex-col flex-wrap  items-center'>
                         <div className='flex flex-col md:flex-row flex-wrap  items-center w-full justify-center md:justify-start md:pl-20 mt-20 md:mt-10'>
@@ -44,10 +44,9 @@ const Homepage = () => {
                         <img src='/assets/colorfulBorder.png' />
                     </div>
                     <div className='flex flex-row overflow-x-auto scrolling-touch scrollbar-hide w-screen md:w-[90%] items-center justify-center'>
-                        {/* <div className='flex flex-row flex-no-wrap overflow-x-scroll w-[90%] scrolling-touch items-center justify-center'> */}
                         <div
-                            class="flex flex-row justify-start md:screen w-screen ml-[70px]">
-                            <div className='flex-none md:flex flex-col items-start w-[290px] h-[220px] bg-[#796AB81A] px-5 py-3 rounded-[20px] border-t-[3px] border-t-[#796AB8] shadow-lg cursor-pointer mr-4 mb-4'>
+                            class="flex flex-row justify-start md:screen w-screen ml-[52px]">
+                            <div className='flex-none md:flex flex-col items-start w-[290px] h-[220px] bg-[#FFFFFF] px-5 py-3 rounded-[20px] border-t-[3px] border-t-[#796AB8] shadow-lg cursor-pointer hover:bg-[#796AB81A] mr-4 mb-4'>
                                 <img src='/assets/homeTreatmentSvg.svg' />
                                 <div className='mt-[-20px]'>
                                     <span className='font-semibold text-[17px] text-[#3F3F3F]'>Home treatments</span>
@@ -80,8 +79,8 @@ const Homepage = () => {
                     </div>
                 </section>
 
-                <section className='flex flex-col md:flex-row items-center justify-between md:justify-center space-x-10 w-full md:w-[85%] bg-[#FBFBFB] rounded-[25px] pt-[90px] pb-[30px] px-[20px] md:px-[40px] mb-10'>
-                    <img src='/assets/treatmentHomeSvg.svg' className='md:w-[40%] w-full mb-5 md:mb-0' />
+                <section className='flex flex-col md:flex-row items-center justify-between md:justify-center space-x-10 w-full md:w-[85%] bg-[#FBFBFB] rounded-[25px] pt-[90px] pb-[30px] px-0 md:px-[40px] mb-10'>
+                    <img src='/assets/treatmentHomeSvg.svg' className='md:w-[40%] w-[91%] mb-5 md:mb-0 mx-[20px]' />
 
                     <div className='w-full md:w-[60%] w-full'>
                         <div className='flex flex-col items-center mb-5'>
@@ -109,7 +108,7 @@ const Homepage = () => {
                     </div>
                     <div className='flex flex-row overflow-x-auto scrolling-touch scrollbar-hide items-center justify-start tb:justify-center w-full bg-[#FCFCFC] pb-5 ml-5'>
                         <BsChevronLeft size={25} className='hidden xl:flex border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mr-3' />
-                        <div className='flex flex-col items-start w-[365px] px-3 py-4 bg-[#E1C75C1A] rounded-[20px] border-[1px] border-[#E1C75C] mr-[25px] mb-[30px] shadow-lg'>
+                        <div className='flex flex-col items-start  w-[365px] px-3 py-4 hover:bg-[#E1C75C1A] rounded-[20px] border-[1px] border-[#E1C75C] border-hidden hover:border-solid ml-[10px] mr-[25px] mb-[30px] shadow-lg cursor-pointer'>
                             <img src='/assets/sunScreenSvg.svg' className='mb-3' />
                             <span className='text-[20px] font-bold'>BIO WATERY SUN CREAM</span>
                             <span className='text-[#C6C6C6] text-[14px]'>SPF50+ PA++++-P</span>
@@ -127,7 +126,7 @@ const Homepage = () => {
                                 <span className='font-semibold text-transparent text-[25px] bg-clip-text bg-gradient-to-b from-[#9D90D5] to-[#796AB8]'>$1,149.99</span>
                             </div>
                         </div>
-                        <div className='flex flex-col items-start w-[365px] px-3 py-4 bg-[#fff] rounded-[20px] mr-[25px] mb-[30px] shadow-lg'>
+                        <div className='flex flex-col items-start w-[365px] px-3 py-4 hover:bg-[#E1C75C1A] rounded-[20px] border-[1px] border-[#E1C75C] border-hidden hover:border-solid mr-[25px] mb-[30px] shadow-lg cursor-pointer'>
                             <img src='/assets/sunScreenSvg.svg' className='mb-3' />
                             <span className='text-[20px] font-bold'>BIO WATERY SUN CREAM</span>
                             <span className='text-[#C6C6C6] text-[14px]'>SPF50+ PA++++-P</span>
@@ -145,7 +144,7 @@ const Homepage = () => {
                                 <span className='font-semibold text-transparent text-[25px] bg-clip-text bg-gradient-to-b from-[#9D90D5] to-[#796AB8]'>$1,149.99</span>
                             </div>
                         </div>
-                        <div className='flex flex-col items-start w-[365px] px-3 py-4 bg-[#fff] rounded-[20px] mb-[30px] shadow-lg'>
+                        <div className='flex flex-col items-start w-[365px] px-3 py-4 hover:bg-[#E1C75C1A] rounded-[20px] border-[1px] border-[#E1C75C] border-hidden hover:border-solid mr-[25px] mb-[30px] shadow-lg cursor-pointer'>
                             <img src='/assets/sunScreenSvg.svg' className='mb-3' />
                             <span className='text-[20px] font-bold'>BIO WATERY SUN CREAM</span>
                             <span className='text-[#C6C6C6] text-[14px]'>SPF50+ PA++++-P</span>
@@ -173,7 +172,7 @@ const Homepage = () => {
                         <img src='/assets/colorfulBorder.png' />
                     </div>
                     <div className='flex flex-col items-center w-full'>
-                        <div className='shadow-lg relative flex flex-col items-center md:items-start w-[85%] md:w-[90%] rounded-[20px] py-4 mb-5'>
+                        <div className='shadow-lg relative flex flex-col items-center md:items-start w-[91%] md:w-[90%] rounded-[20px] py-4 mb-5'>
                             <div className='flex flex-col md:flex-row items-center md:items-start justify-between w-full pr-2 px-3'>
                                 <img src='/assets/Jessica L SVG.svg' />
                                 <span className='md:flex text-[20px] absolute right-[10px]'>3 h ago</span>
@@ -197,7 +196,7 @@ const Homepage = () => {
                             </div>
                             <button className='self-center bg-gradient-to-r from-[#9D90D5] to-[#796AB8] text-white rounded-lg w-[225px] py-3 hover:bg-gradient-to-l'>VISIT PRODUCT</button>
                         </div>
-                        <div className='shadow-lg relative flex flex-col items-center md:items-start w-[85%] md:w-[90%] rounded-[20px] py-4 mb-5'>
+                        <div className='shadow-lg relative flex flex-col items-center md:items-start w-[91%] md:w-[90%] rounded-[20px] py-4 mb-5'>
                             <div className='flex flex-col md:flex-row items-center md:items-start justify-between w-full pr-2 px-3'>
                                 <img src='/assets/Jessica L SVG.svg' />
                                 <span className='md:flex text-[20px] absolute right-[10px]'>3 h ago</span>
@@ -221,7 +220,7 @@ const Homepage = () => {
                             </div>
                             <button className='self-center bg-gradient-to-r from-[#9D90D5] to-[#796AB8] text-white rounded-lg w-[225px] py-3 hover:bg-gradient-to-l'>VISIT PRODUCT</button>
                         </div>
-                        <div className='shadow-lg relative flex flex-col items-center md:items-start w-[85%] md:w-[90%] rounded-[20px] py-4 mb-5'>
+                        <div className='shadow-lg relative flex flex-col items-center md:items-start w-[91%] md:w-[90%] rounded-[20px] py-4 mb-5'>
                             <div className='flex flex-col md:flex-row items-center md:items-start justify-between w-full pr-2 px-3'>
                                 <img src='/assets/Jessica L SVG.svg' />
                                 <span className='md:flex text-[20px] absolute right-[10px]'>3 h ago</span>
@@ -246,7 +245,7 @@ const Homepage = () => {
                             <button className='self-center bg-gradient-to-r from-[#9D90D5] to-[#796AB8] text-white rounded-lg w-[225px] py-3 hover:bg-gradient-to-l'>VISIT PRODUCT</button>
                         </div>
                     </div>
-                    <button className='self-center bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-white rounded-lg w-[299.72px] py-3 my-7 font-semibold hover:bg-gradient-to-l'>LOAD MORE COMMENTS</button>
+                    <button className='self-center bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-white rounded-lg w-[299.72px] py-3 my-7 mb-10 font-semibold hover:bg-gradient-to-l'>LOAD MORE COMMENTS</button>
                 </section>
             </div >
             <Footer />
