@@ -7,10 +7,9 @@ import Footer from './components/footer';
 
 function App() {
   return (
-    <div className='flex flex-col items-center w-[100%]'>
-      <RatingHeader />
+    <>
       <Homepage />
-    </div>
+    </>
   );
 }
 

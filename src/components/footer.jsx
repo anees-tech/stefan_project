@@ -4,15 +4,16 @@ import { BiChevronRight } from "react-icons/bi"
 const Footer = () => {
     return (
 
-        <div className='flex flex-col  relative'>
-            <img src='/assets/footerBackgroundSvg.svg' className='hidden ft:flex w-screen ' />
-            <div className='self-center my-[20px] ft:my-[0px] ft:absolute top-[15px] left-[20px]'>
+        <div className='flex flex-col  relative w-full'>
+            <img src='/assets/footerBackgroundSvg.svg' className='hidden ft:flex w-full ' />
+            <div className='hidden ft:flex ft:my-[0px] ft:absolute top-[15px] left-[20px]'>
                 <img src='/assets/logoSvg2.svg' className='w-[90%] md:w-full' />
             </div>
-            <div className='flex flex-row flex-wrap items-center bg-[#3F3F3F] p-3 ft:bg-transparent ft:absolute bottom-[10px] justify-center ft:justify-between w-full'>
-                <div className='flex flex-col items-center ml-10 ft:mt-7'>
-                    <p className='text-white text-[12px] text-[14px] max-w-[522px] mb-10'>You will be charged if you don't arrive in time or cancel your appointment within 24 h prior to your booking.</p>
-                    <div className='flex flex-row items-center justify-between bg-[#FFFFFF0F] p-3 w-[300px] cursor-pointer mb-10'>
+            <div className='flex flex-row flex-wrap items-center  bg-[#3F3F3F] p-3 ft:bg-transparent ft:absolute bottom-[0px] justify-center ft:justify-between w-full'>
+                <div className='flex flex-col items-center ft:ml-10 ft:mt-7 w-full ft:w-fit'>
+                    <img src='/assets/logoSvg2.svg' className='w-[90%] md:hidden mb-5' />
+                    <p className='text-white text-[12px] text-[14px] max-w-[522px] mb-7 md:mb-10'>You will be charged if you don't arrive in time or cancel your appointment within 24 h prior to your booking.</p>
+                    <div className='flex flex-row items-center justify-between bg-[#FFFFFF0F] p-3 w-full md:w-[300px] cursor-pointer mb-10'>
                         <div className='flex flex-col items-center justify-center'>
                             <span className='text-[16px] text-[#E8C229]'>Talk To Our Support</span>
                             <span className='text-white'>+44 7711111111</span>
@@ -21,7 +22,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className=' flex flex-row flex-wrap  justify-center w-full ft:w-fit md:mr-[100px] md:mb-[100px]'>
+                <div className='flex flex-col space-y-5 md:space-y-0 sm:flex-row flex-wrap  justify-center w-full ft:w-fit  md:mb-[100px]'>
                     <div className='flex flex-col items-start text-start mr-7'>
                         <div className='mb-7'>
                             <h1 className='text-white font-semibold text-[14px] md:text-[17px]'>CUSTOMER CARE</h1>

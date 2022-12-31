@@ -6,6 +6,14 @@
     color: #C6C6C6;
 }
 
+.navigationIcons.mobile {
+    background-color: #fff;
+}
+
 .navigationIcons:hover {
     color: #E8C229;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
 }

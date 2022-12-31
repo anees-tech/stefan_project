@@ -2,7 +2,15 @@ import React from 'react'
 
 const RatingHeader = () => {
     return (
-        <div className='hidden tb:flex flex-row items-center justify-between bg-[#3F3F3F42] w-[89%] rounded-b-lg px-3 z-10 absolute'>
+        <div className='hidden tb:flex flex-row items-center justify-between bg-[#3F3F3F42] w-[89%] rounded-b-lg px-3 z-10 absolute'
+            style={{
+                marginLeft: "auto",
+                marginRight: "auto",
+                left: "0",
+                right: "0",
+                textAlign: "center",
+            }}
+        >
             <div className='flex flex-row items-center space-x-2'>
                 <img src='/assets/googleSvg.svg' />
                 <img src='/assets/starsSvg.svg' />
@@ -17,7 +25,7 @@ const RatingHeader = () => {
                 <img src='/assets/line.png' />
                 <img src='/assets/shoppingSvg.svg' className='hover:cursor-pointer' />
             </div>
-        </div>
+        </div >
     )
 }
 
