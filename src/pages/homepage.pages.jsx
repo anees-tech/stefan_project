@@ -10,7 +10,7 @@ const Homepage = () => {
             <RatingHeader />
             <PageHero>
                 <div className='self-center md:self-start md:ml-[40px]' >
-                    <div className='self-center text-center md:text-start md:self-start pl-10 md:pl-20 mt-3 md:mt-7 w-full'>
+                    <div className='self-center text-center md:text-start md:self-start  md:pl-20 mt-3 md:mt-7 w-full'>
                         <span className='text-white text-[45px] tb:text-[55px] font-bold leading-none'>ALL YOU NEED <br />TO BE EPIC</span>
                         <p className='max-w-[550px] text-[17px] md:text-[16px] text-white mt-10 px-3 md:px-[0px] md:mt-5'>If your skin has started to show wear and tear from sun, aging, acne or other skin conditions there is much that can be done.</p>
                     </div>
@@ -38,7 +38,7 @@ const Homepage = () => {
                     </div>
                 </section>
 
-                <section className='mb-[-70px] z-10 flex flex-col items-center w-[100%]'>
+                <section className='mb-[-70px] z-10 flex flex-col items-center w-full'>
                     <div className='flex flex-col items-center mb-5'>
                         <span className='text-[36px] font-bold mb-2'>WHY US</span>
                         <img src='/assets/colorfulBorder.png' />
@@ -109,7 +109,7 @@ const Homepage = () => {
                     </div>
                     <div className='flex flex-row overflow-x-auto scrolling-touch scrollbar-hide items-center justify-start tb:justify-center w-full bg-[#FCFCFC] pb-5 ml-5'>
                         <BsChevronLeft size={25} className='hidden xl:flex border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mr-3' />
-                        <div className='flex flex-col items-start w-[365px] px-3 py-4 bg-[#E1C75C1A] rounded-[20px] border-[1px] border-[#E1C75C] mr-[45px] mb-[30px] shadow-lg'>
+                        <div className='flex flex-col items-start w-[365px] px-3 py-4 bg-[#E1C75C1A] rounded-[20px] border-[1px] border-[#E1C75C] mr-[25px] mb-[30px] shadow-lg'>
                             <img src='/assets/sunScreenSvg.svg' className='mb-3' />
                             <span className='text-[20px] font-bold'>BIO WATERY SUN CREAM</span>
                             <span className='text-[#C6C6C6] text-[14px]'>SPF50+ PA++++-P</span>
@@ -127,7 +127,7 @@ const Homepage = () => {
                                 <span className='font-semibold text-transparent text-[25px] bg-clip-text bg-gradient-to-b from-[#9D90D5] to-[#796AB8]'>$1,149.99</span>
                             </div>
                         </div>
-                        <div className='flex flex-col items-start w-[365px] px-3 py-4 bg-[#fff] rounded-[20px] mr-[45px] mb-[30px] shadow-lg'>
+                        <div className='flex flex-col items-start w-[365px] px-3 py-4 bg-[#fff] rounded-[20px] mr-[25px] mb-[30px] shadow-lg'>
                             <img src='/assets/sunScreenSvg.svg' className='mb-3' />
                             <span className='text-[20px] font-bold'>BIO WATERY SUN CREAM</span>
                             <span className='text-[#C6C6C6] text-[14px]'>SPF50+ PA++++-P</span>
