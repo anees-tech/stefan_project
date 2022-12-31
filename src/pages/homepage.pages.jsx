@@ -98,11 +98,11 @@ const Homepage = () => {
                 </section>
 
                 <section className=' flex flex-col items-center mb-10 w-full'>
-                    <div className='flex flex-col items-center mb-5'>
+                    <div className='flex flex-col items-center mb-5 px-4'>
                         <span className='text-[36px] font-bold mb-2'>PRODUCTS</span>
                         <img src='/assets/colorfulBorder.png' />
                     </div>
-                    <div className='flex flex-row items-center space-x-3 w-fit bg-[#F6F6F6] p-3 mb-10'>
+                    <div className='flex flex-row items-center space-x-3 w-fit bg-[#F6F6F6] p-3 px-4 mb-10'>
                         <button className='bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-white font-bold text-[18px] md:w-[225px] px-5 py-3 rounded-lg hover:bg-gradient-to-l'>NEW ARRIVALS</button>
                         <button className='bg-[#fff]  text-[#9D90D5] font-medium text-[18px] md:w-[225px] px-5 py-3 rounded-lg hover:bg-[#ddd]'>MOST POPULAR</button>
                     </div>
@@ -169,8 +169,8 @@ const Homepage = () => {
                 </section>
 
                 <section className='w-full flex flex-col items-center'>
-                    <div className='flex flex-col items-center mb-5'>
-                        <span className='text-[36px] font-bold mb-2'>CUSTOMER REVIEWS</span>
+                    <div className='flex flex-col items-center mb-5 px-4'>
+                        <span className='text-[30px] md:text-[36px] font-bold mb-2'>CUSTOMER REVIEWS</span>
                         <img src='/assets/colorfulBorder.png' />
                     </div>
                     <div className='flex flex-col items-center w-full'>
@@ -247,7 +247,7 @@ const Homepage = () => {
                             <button className='self-center bg-gradient-to-r from-[#9D90D5] to-[#796AB8] text-white rounded-lg w-[225px] py-3 hover:bg-gradient-to-l'>VISIT PRODUCT</button>
                         </div>
                     </div>
-                    <button className='self-center bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-white rounded-lg w-[299.72px] py-3 my-7 mb-10 font-semibold hover:bg-gradient-to-l'>LOAD MORE COMMENTS</button>
+                    <button className='self-center bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-white rounded-lg w-[91%] md:w-[299.72px] py-3 my-7 mb-10 font-semibold hover:bg-gradient-to-l'>LOAD MORE COMMENTS</button>
                 </section>
             </div >
             <Footer />
