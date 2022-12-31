@@ -42,11 +42,11 @@ function PageHero({ children, background }) {
 
                         </div>
                         {menuOpen && <div className='md:hidden bg-[#9686DA] text-[#000] fixed z-20 top-0 pt-[70px]  flex flex-col items-center justify-start menu h-full w-full'>
-                            <img src='/assets/logoSvg.svg' className=' md:hidden  absolute left-0 top-8 px-4' />
-                            <div className='tb:hidden flex flex-row items-center space-x-5 absolute top-7 right-0 px-4' >
+                            <img src='/assets/logoSvg.svg' className=' md:hidden  absolute left-0 top-5 px-4' />
+                            <div className='tb:hidden flex flex-row items-center space-x-3 absolute top-[17px] right-[-6px] px-4' >
                                 <img src='/assets/ShoppingSvg.svg' />
                                 {!menuOpen ?
-                                    <FaBars size={20} className="cursor-pointer" color='#fff' onClick={() => setMenuOpen(!menuOpen)} />
+                                    <FaBars size={25} className="cursor-pointer" color='#fff' onClick={() => setMenuOpen(!menuOpen)} />
                                     : <IoMdClose size={30} className="cursor-pointer" color='#fff' onClick={() => setMenuOpen(!menuOpen)} />
                                 }
                             </div>

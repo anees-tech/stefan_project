@@ -43,38 +43,34 @@ const Homepage = () => {
                         <span className='text-[36px] font-bold mb-2'>WHY US</span>
                         <img src='/assets/colorfulBorder.png' />
                     </div>
-                    <div className='flex flex-row overflow-x-auto scrolling-touch scrollbar-hide w-full md:w-[90%] items-center justify-start'>
-                        <div
-                            class="flex flex-row justify-start md:screen w-screen ml-[52px]">
-                            <div className='flex-none md:flex flex-col items-start w-[290px] h-[220px] bg-[#FFFFFF] px-5 py-3 rounded-[20px] border-t-[3px] border-t-[#796AB8] shadow-lg cursor-pointer hover:bg-[#796AB81A] mr-4 mb-4'>
-                                <img src='/assets/homeTreatmentSvg.svg' />
-                                <div className='mt-[-20px]'>
-                                    <span className='font-semibold text-[17px] text-[#3F3F3F]'>Home treatments</span>
-                                    <p className='text-[14px] text-[#3F3F3F] mt-3'>We are focused on bringing affordable, and quality healthcare to your doorstep,</p>
-                                </div>
+                    <div className='flex flex-row overflow-x-auto scrolling-touch scrollbar-hide w-full md:w-[90%] items-center justify-start px-4 py-4'>
+                        <div className='flex-none md:flex flex-col items-start w-[290px] h-[220px] bg-[#FFFFFF] px-5 py-3 rounded-[20px] border-t-[3px] border-t-[#796AB8] shadow-lg cursor-pointer hover:bg-[#796AB81A] mr-4 '>
+                            <img src='/assets/homeTreatmentSvg.svg' />
+                            <div className='mt-[-20px]'>
+                                <span className='font-semibold text-[17px] text-[#3F3F3F]'>Home treatments</span>
+                                <p className='text-[14px] text-[#3F3F3F] mt-3'>We are focused on bringing affordable, and quality healthcare to your doorstep,</p>
                             </div>
-                            <div className='flex-none md:flex flex-col items-start w-[290px] h-[220px] bg-[#FFFFFF] px-5 py-3 rounded-[20px] border-t-[3px] border-t-[#796AB8] shadow-lg cursor-pointer hover:bg-[#796AB81A] mr-4 mb-4'>
-                                <img src='/assets/clinicTreatmentSvg.svg' />
-                                <div className='mt-[-20px]'>
-                                    <span className='font-semibold text-[17px] text-[#3F3F3F]'>Clinic Treatments</span>
-                                    <p className='text-[14px] text-[#3F3F3F] mt-3'>Fancy for a walk in central of London, come and visit us to own your look.</p>
-                                </div>
+                        </div>
+                        <div className='flex-none md:flex flex-col items-start w-[290px] h-[220px] bg-[#FFFFFF] px-5 py-3 rounded-[20px] border-t-[3px] border-t-[#796AB8] shadow-lg cursor-pointer hover:bg-[#796AB81A] mr-4'>
+                            <img src='/assets/clinicTreatmentSvg.svg' />
+                            <div className='mt-[-20px]'>
+                                <span className='font-semibold text-[17px] text-[#3F3F3F]'>Clinic Treatments</span>
+                                <p className='text-[14px] text-[#3F3F3F] mt-3'>Fancy for a walk in central of London, come and visit us to own your look.</p>
                             </div>
-                            <div className='flex-none md:flex flex-col items-start w-[290px] h-[220px] bg-[#FFFFFF] px-5 py-3 rounded-[20px] border-t-[3px] border-t-[#796AB8] shadow-lg cursor-pointer hover:bg-[#796AB81A] mr-4 mb-4'>
-                                <img src='/assets/ukShippingSvg.svg' />
-                                <div className='mt-[-20px]'>
-                                    <span className='font-semibold text-[17px] text-[#3F3F3F]'>UK Shipping</span>
-                                    <p className='text-[14px] text-[#3F3F3F] mt-3'>Our products are available for delivery anywhere in United Kingdom.</p>
-                                </div>
+                        </div>
+                        <div className='flex-none md:flex flex-col items-start w-[290px] h-[220px] bg-[#FFFFFF] px-5 py-3 rounded-[20px] border-t-[3px] border-t-[#796AB8] shadow-lg cursor-pointer hover:bg-[#796AB81A] mr-4'>
+                            <img src='/assets/ukShippingSvg.svg' />
+                            <div className='mt-[-20px]'>
+                                <span className='font-semibold text-[17px] text-[#3F3F3F]'>UK Shipping</span>
+                                <p className='text-[14px] text-[#3F3F3F] mt-3'>Our products are available for delivery anywhere in United Kingdom.</p>
                             </div>
-                            <div className='flex-none md:flex flex-col items-start w-[290px] h-[220px] bg-[#FFFFFF] px-5 py-3 rounded-[20px] border-t-[3px] border-t-[#796AB8] shadow-lg cursor-pointer hover:bg-[#796AB81A] mr-4 mb-4'>
-                                <img src='/assets/2LanguagesSvg.svg' />
-                                <div className='mt-[-20px]'>
-                                    <span className='font-semibold text-[17px] text-[#3F3F3F]'>2 Languages</span>
-                                    <p className='text-[14px] text-[#3F3F3F] mt-3'>English and Romanian</p>
-                                </div>
+                        </div>
+                        <div className='flex-none md:flex flex-col items-start w-[290px] h-[220px] bg-[#FFFFFF] px-5 py-3 rounded-[20px] border-t-[3px] border-t-[#796AB8] shadow-lg cursor-pointer hover:bg-[#796AB81A]'>
+                            <img src='/assets/2LanguagesSvg.svg' />
+                            <div className='mt-[-20px]'>
+                                <span className='font-semibold text-[17px] text-[#3F3F3F]'>2 Languages</span>
+                                <p className='text-[14px] text-[#3F3F3F] mt-3'>English and Romanian</p>
                             </div>
-
                         </div>
                     </div>
                 </section>
@@ -103,13 +99,13 @@ const Homepage = () => {
                         <img src='/assets/colorfulBorder.png' />
                     </div>
                     <div className='flex flex-row items-center space-x-3 w-fit bg-[#F6F6F6] p-3 px-4 mb-10'>
-                        <button className='bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-white font-bold text-[18px] md:w-[225px] px-5 py-3 rounded-lg hover:bg-gradient-to-l'>NEW ARRIVALS</button>
-                        <button className='bg-[#fff]  text-[#9D90D5] font-medium text-[18px] md:w-[225px] px-5 py-3 rounded-lg hover:bg-[#ddd]'>MOST POPULAR</button>
+                        <button className='bg-[#fff] text-[#9D90D5] from-[#E1C75C] to-[#C2A013] text-white font-medium text-[18px] md:w-[225px] px-5 py-3 rounded-lg hover:text-white hover:bg-gradient-to-r'>NEW ARRIVALS</button>
+                        <button className='bg-[#fff]  text-[#9D90D5] from-[#E1C75C] to-[#C2A013] font-medium text-[18px] md:w-[225px] px-5 py-3 rounded-lg hover:text-white hover:bg-gradient-to-r'>MOST POPULAR</button>
                     </div>
-                    <div className=' flex flex-row overflow-x-auto scrolling-touch scrollbar-hide items-center justify-start tb:justify-center w-full bg-[#FCFCFC] pb-5 pl-4'>
-                        {/* <div className='flex flex-row'> */}
+                    <div className=' flex flex-row overflow-x-auto scrolling-touch scrollbar-hide items-center justify-start tb:justify-center w-full bg-[#FCFCFC] pb-5 px-4'>
+
                         <BsChevronLeft size={25} className='hidden xl:flex border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mr-3' />
-                        <div className='flex flex-col items-start  w-[365px] px-3 py-4 hover:bg-[#E1C75C1A] rounded-[20px] border-[1px] border-[#E1C75C] border-hidden hover:border-solid ml-[10px] mr-[25px] mb-[30px] shadow-lg cursor-pointer'>
+                        <div className='flex flex-col items-start  w-[365px] px-3 py-4 hover:bg-[#E1C75C1A] rounded-[20px] border-[1px] border-[#E1C75C] border-hidden hover:border-solid mr-[25px] mb-[30px] shadow-lg cursor-pointer'>
                             <img src='/assets/sunScreenSvg.svg' className='mb-3' />
                             <span className='text-[20px] font-bold'>BIO WATERY SUN CREAM</span>
                             <span className='text-[#C6C6C6] text-[14px]'>SPF50+ PA++++-P</span>
@@ -164,7 +160,6 @@ const Homepage = () => {
                             </div>
                         </div>
                         <BsChevronRight size={25} className='hidden xl:flex border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons ml-3' />
-                        {/* </div> */}
                     </div>
                 </section>
 
