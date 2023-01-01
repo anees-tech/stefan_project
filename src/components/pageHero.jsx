@@ -146,19 +146,6 @@ function PageHero({ children, background, mobileBackground }) {
                             </div>
                         </div>
                     </div>
-
-                    {/* <div className='w-full flex flex-col items-center justify-center pb-3 absolute bottom-0 px-4'>
-                        <div className='flex md:hidden flex-row items-center justify-between space-x-2 mt-[10px] md:mt-[100px] tb:mt-[200px] w-full'>
-                            {!menuOpen && <BsChevronLeft size={25} className=' border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' />}
-                            <div className='flex flex-row items-center space-x-3'>
-                                <img src='/assets/selectedEllipse.png' className='border-[1px] border-[#E8C229] rounded-[1000px] p-[3px]' />
-                                <img src='/assets/ellipse.png' className='' />
-                                <img src='/assets/ellipse.png' className='' />
-                            </div>
-                            {!menuOpen && <BsChevronRight size={25} className=' border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' />}
-
-                        </div>
-                    </div> */}
                     <div className='absolute bottom-[50px] w-fit '
                         style={{
                             marginLeft: "auto",
@@ -168,15 +155,6 @@ function PageHero({ children, background, mobileBackground }) {
                             textAlign: "center",
                         }}
                     >
-                        {/* <div className='hidden md:flex flex-row items-center space-x-2 absolute bottom-0  w-screen bg-red-100'>
-                            {!menuOpen && <a><BsChevronLeft size={25} onClick={() => slideTracker("backward")} href="#carouselExampleControls" data-slide="prev" className='carousel-control-prev border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' /></a>}
-                            <div className='flex flex-row items-center space-x-3'>
-                                <img src={slide === 1 ? '/assets/selectedEllipse.png' : '/assets/ellipse.png'} className={`border-[1px] border-[#E8C229] ${slide === 1 && `border-solid`} rounded-[50%] p-[2px]`} />
-                                <img src={slide === 2 ? '/assets/selectedEllipse.png' : '/assets/ellipse.png'} className={`border-[1px]  border-[#E8C229] ${slide === 2 && `border-solid`}  rounded-[50%] p-[2px]`} />
-                                <img src={slide === 3 ? '/assets/selectedEllipse.png' : '/assets/ellipse.png'} className={`border-[1px]  border-[#E8C229] ${slide === 3 && `border-solid`} rounded-[50%] p-[2px]`} />
-                            </div>
-                            {!menuOpen && <a> <BsChevronRight size={25} onClick={() => slideTracker("forward")} href="#carouselExampleControls" data-slide="next" className='carousel-control-next border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' /></a>}
-                        </div> */}
                     </div>
                 </div>
             </div>

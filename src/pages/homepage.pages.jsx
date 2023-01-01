@@ -115,8 +115,8 @@ const Homepage = () => {
                         <span className='text-[36px] font-bold mb-2'>PRODUCTS</span>
                         <img src='/assets/colorfulBorder.svg' />
                     </div>
-                    <div className='flex flex-row items-center space-x-3 w-fit bg-[#F6F6F6] p-3 px-4 mb-10'>
-                        <button className='bg-[#fff] text-[#9D90D5] from-[#E1C75C] to-[#C2A013] text-white font-medium text-[18px] md:w-[225px] px-5 py-3 rounded-lg hover:text-white hover:bg-gradient-to-r'>NEW ARRIVALS</button>
+                    <div className='flex flex-row items-center overflow-x-auto scrolling-touch space-x-3 w-full bg-[#F6F6F6] p-3 px-4 mb-10'>
+                        <button className='bg-[#fff] text-[#9D90D5] from-[#E1C75C] to-[#C2A013] font-medium text-[18px] md:w-[225px] px-5 py-3 rounded-lg hover:text-white hover:bg-gradient-to-r'>NEW ARRIVALS</button>
                         <button className='bg-[#fff]  text-[#9D90D5] from-[#E1C75C] to-[#C2A013] font-medium text-[18px] md:w-[225px] px-5 py-3 rounded-lg hover:text-white hover:bg-gradient-to-r'>MOST POPULAR</button>
                     </div>
                     <div className=' flex flex-row overflow-x-auto scrolling-touch scrollbar-hide items-center justify-start tb:justify-center w-full bg-[#FCFCFC] pb-5 px-4'>
