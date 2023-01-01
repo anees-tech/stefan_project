@@ -38,10 +38,12 @@ function PageHero({ children, background }) {
                             </div>
                         </div>
                         {menuOpen && <div className='md:hidden bg-[#9686DA]  text-[#000] fixed z-20 top-[49px]   flex flex-col items-center justify-start menu h-full w-full'>
-                            <div className='flex flex-row items-center bg-[#7F73B1] w-full'>
-                                <img src='/assets/googleSvg.svg' className='h-[50px]' />
-                                <img src='/assets/starsSvg.svg' className='h-[23px] mr-2' />
-                                <span className='text-white text-[13px]'>4.5 rating of 25 reviews </span>
+                            <div className='flex flex-col justify-center xs:flex-row xs:justify-start items-center bg-[#7F73B1] w-full'>
+                                <div className='flex flex-row items-center'>
+                                    <img src='/assets/googleSvg.svg' className='h-[50px]' />
+                                    <img src='/assets/starsSvg.svg' className='h-[23px] mr-2' />
+                                </div>
+                                <span className='text-white text-[13px] xs:mb-1'>4.5 rating of 25 reviews </span>
                             </div>
                             <div className='flex flex-col space-y-2 items-center w-full'>
                                 <span onClick={() => setMenuOpen(false)} className="text-[#FFF] font-medium text-[18px] mt-3 cursor-pointer border-hidden border-b-[3px] border-b-[#fff] hover:mb-[-3px] p-1 w-fit flex flex-col items-center">HOME</span>
