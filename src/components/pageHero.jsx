@@ -37,7 +37,7 @@ function PageHero({ children, background }) {
                                 </div>
                             </div>
                         </div>
-                        {menuOpen && <div className='md:hidden bg-[#9686DA]  text-[#000] fixed z-20 top-[49px]   flex flex-col items-center justify-start menu h-full w-full'>
+                        {menuOpen && <div className='tb:hidden bg-[#9686DA]  text-[#000] fixed z-20 top-[49px]   flex flex-col items-center justify-start menu h-full w-full'>
                             <div className='flex flex-col justify-center xs:flex-row xs:justify-start items-center bg-[#7F73B1] w-full'>
                                 <div className='flex flex-row items-center'>
                                     <img src='/assets/googleSvg.svg' className='h-[50px]' />
