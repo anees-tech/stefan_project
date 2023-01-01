@@ -28,22 +28,22 @@ const Homepage = () => {
                         <span className='text-[36px] font-bold mb-2'>BRANDS</span>
                         <img src='/assets/colorfulBorder.png' />
                     </div>
-                    <div className='flex flex-col lg:flex-row flex-wrap items-center mb-10 tb:mb-0'>
-                        <img src='/assets/Brand1.png' className='hover:shadow-xl hover:mb-[12px] rounded-lg' />
-                        <img src='/assets/Brand2.png' className='hidden md:flex mb-[-25px]' />
-                        <img src='/assets/Brand3.png' className='hover:shadow-xl hover:mb-[12px] rounded-lg' />
-                        <img src='/assets/Brand4.png' className='hover:shadow-xl hover:mb-[12px] rounded-lg' />
-                        <img src='/assets/Brand5.png' className='hidden md:flex hover:shadow-xl hover:mb-[12px] rounded-lg' />
-                        <img src='/assets/Brand6.png' className='hidden md:flex hover:shadow-xl hover:mb-[12px] rounded-lg pr-3' />
+                    <div className='flex flex-col md:flex-row justify-center flex-wrap items-center mb-10 tb:mb-10 tb:mt-10'>
+                        <img src='/assets/Brand1.png' className='hover:shadow-xl rounded-lg' />
+                        <img src='/assets/Brand2.svg' className='hidden md:flex hover:shadow-xl rounded-lg' />
+                        <img src='/assets/Brand3.png' className='hover:shadow-xl rounded-lg' />
+                        <img src='/assets/Brand4.png' className='hover:shadow-xl rounded-lg' />
+                        <img src='/assets/Brand5.png' className='hidden md:flex hover:shadow-xl rounded-lg' />
+                        <img src='/assets/Brand6.png' className='hidden md:flex hover:shadow-xl rounded-lg pr-3' />
                     </div>
                 </section>
 
                 <section className='mb-[-70px] z-10 flex flex-col items-center w-full'>
-                    <div className='flex flex-col items-center mb-5'>
+                    <div className='flex flex-col items-center  mb-5'>
                         <span className='text-[36px] font-bold mb-2'>WHY US</span>
                         <img src='/assets/colorfulBorder.png' />
                     </div>
-                    <div className='flex flex-row overflow-x-auto scrolling-touch scrollbar-hide w-full md:w-[90%] items-center justify-start px-4 py-4'>
+                    <div className='flex flex-row overflow-x-auto scrolling-touch scrollbar-hide w-full items-center justify-start tb:justify-center px-4 py-4'>
                         <div className='flex-none md:flex flex-col items-start w-[290px] h-[220px] bg-[#FFFFFF] px-5 py-3 rounded-[20px] border-t-[3px] border-t-[#796AB8] shadow-lg cursor-pointer hover:bg-[#796AB81A] mr-4 '>
                             <img src='/assets/homeTreatmentSvg.svg' />
                             <div className='mt-[-20px]'>

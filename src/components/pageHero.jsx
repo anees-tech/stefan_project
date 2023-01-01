@@ -15,8 +15,8 @@ function PageHero({ children, background }) {
                     <div className=' flex flex-col items-center  pt-7 pb-2 px-4 top-0 pb-4 absolute tb:top-[50px] w-full'>
                         <div className='flex flex-row items-center justify-between w-[90%] mb-10 md:mb-[0px]'>
                             <div className='flex flex-row items-center space-x-3'>
-                                <img src='/assets/logoSvg.svg' className='hidden tb:flex md:ml-[85px]  xxl:absolute left-[100px]' />
-                                <span className='hidden tb:flex text-white font-medium text-[19px]'>TREATMENTS</span>
+                                <img src='/assets/logoSvg.svg' className='hidden tb:flex md:ml-[85px] ' />
+                                <span className='hidden tb:flex text-white font-medium text-[19px] '>TREATMENTS</span>
                             </div>
                             <div className='hidden tb:flex flex-row items-center space-x-4 md:mr-[85px] xxl:absolute right-[100px]'>
                                 <span className='text-white text-[16px] font-medium hover:cursor-pointer'>HOME</span>
