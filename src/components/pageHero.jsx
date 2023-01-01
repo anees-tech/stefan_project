@@ -12,7 +12,7 @@ function PageHero({ children, background }) {
                 <div className='relative  mb-7 w-full'>
                     <img src='/assets/homepageHeroSvg.svg' className='hidden md:flex w-full' />
                     <img src='/assets/mobileBackgroundSvg.svg' className='md:hidden w-full' />
-                    <div className=' flex flex-col items-center  pt-7 pb-2 px-4 top-4 absolute tb:top-[50px] w-full'>
+                    <div className=' flex flex-col items-center  pt-7 pb-2 px-4 top-0 pb-4 absolute tb:top-[50px] w-full'>
                         <div className='flex flex-row items-center justify-between w-[90%] mb-10 md:mb-[0px]'>
                             <div className='flex flex-row items-center space-x-3'>
                                 <img src='/assets/logoSvg.svg' className='hidden tb:flex md:ml-[85px]  xxl:absolute left-[100px]' />
