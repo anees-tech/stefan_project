@@ -26,22 +26,22 @@ const Homepage = () => {
                 <section>
                     <div className='flex flex-col items-center mb-5'>
                         <span className='text-[36px] font-bold mb-2'>BRANDS</span>
-                        <img src='/assets/colorfulBorder.png' />
+                        <img src='/assets/colorfulBorder.svg' />
                     </div>
                     <div className='flex flex-col md:flex-row justify-center flex-wrap items-center mb-10 tb:mb-10 tb:mt-10'>
-                        <img src='/assets/Brand1.png' className='hover:shadow-xl rounded-lg' />
+                        <img src='/assets/Brand1.svg' className='hover:shadow-xl rounded-lg' />
                         <img src='/assets/Brand2.svg' className='hidden md:flex hover:shadow-xl rounded-lg' />
-                        <img src='/assets/Brand3.png' className='hover:shadow-xl rounded-lg' />
-                        <img src='/assets/Brand4.png' className='hover:shadow-xl rounded-lg' />
-                        <img src='/assets/Brand5.png' className='hidden md:flex hover:shadow-xl rounded-lg' />
-                        <img src='/assets/Brand6.png' className='hidden md:flex hover:shadow-xl rounded-lg pr-3' />
+                        <img src='/assets/Brand3.svg' className='hover:shadow-xl rounded-lg' />
+                        <img src='/assets/Brand4.svg' className='hover:shadow-xl rounded-lg' />
+                        <img src='/assets/Brand5.svg' className='hidden md:flex hover:shadow-xl rounded-lg' />
+                        <img src='/assets/Brand6.svg' className='hidden md:flex hover:shadow-xl rounded-lg pr-3' />
                     </div>
                 </section>
 
                 <section className='mb-[-70px] z-10 flex flex-col items-center w-full'>
                     <div className='flex flex-col items-center  mb-5'>
                         <span className='text-[36px] font-bold mb-2'>WHY US</span>
-                        <img src='/assets/colorfulBorder.png' />
+                        <img src='/assets/colorfulBorder.svg' />
                     </div>
                     <div className='flex flex-row overflow-x-auto scrolling-touch scrollbar-hide w-full items-center justify-start tb:justify-center px-4 py-4'>
                         <div className='flex-none md:flex flex-col items-start w-[290px] h-[220px] bg-[#FFFFFF] px-5 py-3 rounded-[20px] border-t-[3px] border-t-[#796AB8] shadow-lg cursor-pointer hover:bg-[#796AB81A] mr-4 '>
@@ -81,7 +81,7 @@ const Homepage = () => {
                     <div className='w-full md:w-[60%] w-full pl-4'>
                         <div className='flex flex-col items-center mb-5'>
                             <span className='text-[36px] font-bold mb-2'>Home Treatments</span>
-                            <img src='/assets/colorfulBorder.png' />
+                            <img src='/assets/colorfulBorder.svg' />
                         </div>
                         <p className='mb-20 w-full'>
                             We can offer your treatments at your house. Just look for the treatment you wish and book your favourite day and hour to get it done.
@@ -96,7 +96,7 @@ const Homepage = () => {
                 <section className=' flex flex-col items-center mb-10 w-full'>
                     <div className='flex flex-col items-center mb-5 px-4'>
                         <span className='text-[36px] font-bold mb-2'>PRODUCTS</span>
-                        <img src='/assets/colorfulBorder.png' />
+                        <img src='/assets/colorfulBorder.svg' />
                     </div>
                     <div className='flex flex-row items-center space-x-3 w-fit bg-[#F6F6F6] p-3 px-4 mb-10'>
                         <button className='bg-[#fff] text-[#9D90D5] from-[#E1C75C] to-[#C2A013] text-white font-medium text-[18px] md:w-[225px] px-5 py-3 rounded-lg hover:text-white hover:bg-gradient-to-r'>NEW ARRIVALS</button>
@@ -111,7 +111,7 @@ const Homepage = () => {
                             <span className='text-[#C6C6C6] text-[14px]'>SPF50+ PA++++-P</span>
                             <div className='flex flex-row items-center justify-between mt-3 w-full mb-2'>
                                 <div className='flex flex-row items-center space-x-3'>
-                                    <img src='/assets/fullStars.png' />
+                                    <img src='/assets/fullStars.svg' />
                                     <span className='text-[#C6C6C6]'>4.5/5</span>
                                 </div>
                                 <div>
@@ -129,7 +129,7 @@ const Homepage = () => {
                             <span className='text-[#C6C6C6] text-[14px]'>SPF50+ PA++++-P</span>
                             <div className='flex flex-row items-center justify-between mt-3 w-full mb-2'>
                                 <div className='flex flex-row items-center space-x-3'>
-                                    <img src='/assets/fullStars.png' />
+                                    <img src='/assets/fullStars.svg' />
                                     <span className='text-[#C6C6C6]'>4.5/5</span>
                                 </div>
                                 <div>
@@ -147,7 +147,7 @@ const Homepage = () => {
                             <span className='text-[#C6C6C6] text-[14px]'>SPF50+ PA++++-P</span>
                             <div className='flex flex-row items-center justify-between mt-3 w-full mb-2'>
                                 <div className='flex flex-row items-center space-x-3'>
-                                    <img src='/assets/fullStars.png' />
+                                    <img src='/assets/fullStars.svg' />
                                     <span className='text-[#C6C6C6]'>4.5/5</span>
                                 </div>
                                 <div>
@@ -166,7 +166,7 @@ const Homepage = () => {
                 <section className='w-full flex flex-col items-center'>
                     <div className='flex flex-col items-center mb-5 px-4'>
                         <span className='text-[30px] md:text-[36px] font-bold mb-2'>CUSTOMER REVIEWS</span>
-                        <img src='/assets/colorfulBorder.png' />
+                        <img src='/assets/colorfulBorder.svg' />
                     </div>
                     <div className='flex flex-col items-center w-full'>
                         <div className='shadow-lg relative flex flex-col items-center md:items-start w-[91%] md:w-[90%] rounded-[20px] py-4 mb-5'>
@@ -177,11 +177,11 @@ const Homepage = () => {
                                     <div className='flex flex-col items-center md:items-start'>
                                         <span className='text-[25px] md:text-[32px] font-bold'>Jessica L.</span>
                                         <div className='flex flex-row items-center self-start space-x-3 mb-2'>
-                                            <img src='/assets/checkMark.png' className='h-fit' />
+                                            <img src='/assets/checkMark.svg' className='h-fit' />
                                             <span className='text-[#A1A1A1] text-[20px]'>Verified Buyer</span>
                                         </div>
                                         <div className='flex flex-row self-start space-x-3 mb-4'>
-                                            <img src='/assets/fullStars.png' />
+                                            <img src='/assets/fullStars.svg' />
                                             <span>5/5</span>
                                         </div>
                                         <p className='mb-[20px] md:mb-[100px] text-[16px] md:text-[20px]'>These is the best product I bought so far! I love how they grab color too. So
@@ -201,11 +201,11 @@ const Homepage = () => {
                                     <div className='flex flex-col items-center md:items-start'>
                                         <span className='text-[25px] md:text-[32px] font-bold'>Jessica L.</span>
                                         <div className='flex flex-row items-center self-start space-x-3 mb-2'>
-                                            <img src='/assets/checkMark.png' className='h-fit' />
+                                            <img src='/assets/checkMark.svg' className='h-fit' />
                                             <span className='text-[#A1A1A1] text-[20px]'>Verified Buyer</span>
                                         </div>
                                         <div className='flex flex-row self-start space-x-3 mb-4'>
-                                            <img src='/assets/fullStars.png' />
+                                            <img src='/assets/fullStars.svg' />
                                             <span>5/5</span>
                                         </div>
                                         <p className='mb-[20px] md:mb-[100px] text-[16px] md:text-[20px]'>These is the best product I bought so far! I love how they grab color too. So
@@ -225,11 +225,11 @@ const Homepage = () => {
                                     <div className='flex flex-col items-center md:items-start'>
                                         <span className='text-[25px] md:text-[32px] font-bold'>Jessica L.</span>
                                         <div className='flex flex-row items-center self-start space-x-3 mb-2'>
-                                            <img src='/assets/checkMark.png' className='h-fit' />
+                                            <img src='/assets/checkMark.svg' className='h-fit' />
                                             <span className='text-[#A1A1A1] text-[20px]'>Verified Buyer</span>
                                         </div>
                                         <div className='flex flex-row self-start space-x-3 mb-4'>
-                                            <img src='/assets/fullStars.png' />
+                                            <img src='/assets/fullStars.svg' />
                                             <span>5/5</span>
                                         </div>
                                         <p className='mb-[20px] md:mb-[100px] text-[16px] md:text-[20px]'>These is the best product I bought so far! I love how they grab color too. So
