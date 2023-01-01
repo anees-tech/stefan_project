@@ -11,7 +11,8 @@ function PageHero({ children, background }) {
             <div>
                 <div className='relative  mb-7 w-full'>
                     <img src='/assets/homepageHeroSvg.svg' className='hidden md:flex w-full' />
-                    <div className='bg-[#9686DA] md:bg-transparent flex flex-col items-center  pt-7 pb-2 px-4 md:top-0 md:absolute tb:top-[50px] w-full'>
+                    <img src='/assets/mobileBackgroundSvg.svg' className='md:hidden w-full' />
+                    <div className=' flex flex-col items-center  pt-7 pb-2 px-4 top-10 absolute tb:top-[50px] w-full'>
                         <div className='flex flex-row items-center justify-between w-[90%] mb-10 md:mb-[0px]'>
                             <div className='flex flex-row items-center space-x-3'>
                                 <img src='/assets/logoSvg.svg' className='hidden tb:flex md:ml-[85px]  xxl:absolute left-[100px]' />
@@ -72,17 +73,18 @@ function PageHero({ children, background }) {
                             </div>
                         </div>}
                         {children}
-                        <div className='w-full flex flex-col items-center justify-center pb-5'>
-                            <div className='flex md:hidden flex-row items-center justify-between space-x-2 mt-[10px] md:mt-[100px] tb:mt-[200px] w-full'>
-                                {!menuOpen && <BsChevronLeft size={25} className='border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' />}
-                                <div className='flex flex-row items-center space-x-3'>
-                                    <img src='/assets/selectedEllipse.png' className='border-[1px] border-[#E8C229] rounded-[1000px] p-[3px]' />
-                                    <img src='/assets/ellipse.png' className='' />
-                                    <img src='/assets/ellipse.png' className='' />
-                                </div>
-                                {!menuOpen && <BsChevronRight size={25} className='border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' />}
+                    </div>
 
+                    <div className='w-full flex flex-col items-center justify-center pb-5 absolute bottom-0 px-4'>
+                        <div className='flex md:hidden flex-row items-center justify-between space-x-2 mt-[10px] md:mt-[100px] tb:mt-[200px] w-full'>
+                            {!menuOpen && <BsChevronLeft size={25} className='border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' />}
+                            <div className='flex flex-row items-center space-x-3'>
+                                <img src='/assets/selectedEllipse.png' className='border-[1px] border-[#E8C229] rounded-[1000px] p-[3px]' />
+                                <img src='/assets/ellipse.png' className='' />
+                                <img src='/assets/ellipse.png' className='' />
                             </div>
+                            {!menuOpen && <BsChevronRight size={25} className='border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' />}
+
                         </div>
                     </div>
                     <div className='absolute bottom-[50px] w-fit '
