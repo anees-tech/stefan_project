@@ -132,7 +132,7 @@ function PageHero({ children, background, mobileBackground }) {
                             </a>
                             <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                             </a>
-                            <div className='w-full flex flex-col items-center justify-center pb-3 absolute bottom-0 px-4'>
+                            <div className='w-full flex flex-col items-center justify-center pb-3  px-4 absolute bottom-0'>
                                 <div className='flex  flex-row items-center justify-between space-x-2 mt-[10px] md:mt-[100px] tb:mt-[200px] w-full'>
                                     {!menuOpen && <a><BsChevronLeft size={25} onClick={() => slideTracker("backward")} href="#carouselExampleControls" data-slide="prev" className='carousel-control-prev border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' /></a>}
                                     <div className='flex flex-row items-center space-x-3'>
@@ -145,16 +145,6 @@ function PageHero({ children, background, mobileBackground }) {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className='absolute bottom-[50px] w-fit '
-                        style={{
-                            marginLeft: "auto",
-                            marginRight: "auto",
-                            left: "0",
-                            right: "0",
-                            textAlign: "center",
-                        }}
-                    >
                     </div>
                 </div>
             </div>
