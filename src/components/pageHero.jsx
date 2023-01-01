@@ -41,7 +41,7 @@ function PageHero({ children, background }) {
                             <div className='flex flex-row items-center bg-[#7F73B1] w-full'>
                                 <img src='/assets/googleSvg.svg' className='h-[50px]' />
                                 <img src='/assets/starsSvg.svg' className='h-[23px] mr-2' />
-                                <span className='text-white text-[16px]'>4.5 rating of 25 reviews </span>
+                                <span className='text-white text-[13px]'>4.5 rating of 25 reviews </span>
                             </div>
                             <div className='flex flex-col space-y-2 items-center w-full'>
                                 <span onClick={() => setMenuOpen(false)} className="text-[#FFF] font-medium text-[18px] mt-3 cursor-pointer border-hidden border-b-[3px] border-b-[#fff] hover:mb-[-3px] p-1 w-fit flex flex-col items-center">HOME</span>
@@ -56,7 +56,7 @@ function PageHero({ children, background }) {
                                     <img src='/assets/facebookSvg.svg' />
                                     <img src='/assets/youtubeSvg.svg' />
                                 </div>
-                                <div className='flex flex-row justify-between items-center bg-[#6C5EA4] text-white text-[14px]  px-4 py-1 my-3 w-full'>
+                                <div className='flex flex-row justify-between items-center bg-[#6C5EA4] text-white text-[12px]  px-4 py-1 my-3 w-full'>
                                     <div className='flex flex-row space-x-3 items-center'>
                                         <img src='/assets/mailSvg.svg' className='hover:cursor-pointer' />
                                         <span className='hover:cursor-pointer' >support@aztreatments.com</span>
