@@ -6,7 +6,6 @@ import { Carousel } from 'react-bootstrap'
 import RatingHeader from '../components/ratingHeader'
 
 const Homepage = () => {
-    const [slide, setSlide] = useState(2);
     const Slide1 = () => (
         <div className='self-center md:self-start md:ml-[40px]' >
             <div className='self-center text-center md:text-start md:self-start  md:pl-20 mt-3 md:mt-7 w-full'>
@@ -39,25 +38,7 @@ const Homepage = () => {
     return (
         <div className='w-full bg-[#FAFAFA]'>
             <RatingHeader />
-            <div id="carouselExampleControls" className="carousel slide" data-interval="7000" data-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg'>
-                            <Slide1 />
-                        </PageHero>
-                    </div>
-                    <div className="carousel-item">
-                        <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg'>
-                            <Slide2 />
-                        </PageHero>
-                    </div>
-                </div>
-                <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-
-                </a>
-                <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                </a>
-            </div>
+            <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg' />
             <div className='flex flex-col items-center md:mt-[80px] w-full'>
                 <section>
                     <div className='flex flex-col items-center mb-5'>

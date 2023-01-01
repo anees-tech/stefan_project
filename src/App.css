@@ -17,3 +17,11 @@
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
 }
+
+.carousel-control-prev {
+    position: relative;
+}
+
+.carousel-control-next {
+    position: relative;
+}
