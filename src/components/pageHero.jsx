@@ -4,14 +4,14 @@ import { TfiClose } from "react-icons/tfi"
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs"
 
 
-function PageHero({ children, background }) {
+function PageHero({ children, background, mobileBackground, slide }) {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
         <div className='flex flex-col w-full h-full'>
             <div>
                 <div className='relative  mb-7 w-full'>
-                    <img src='/assets/homepageHeroSvg.svg' className='hidden md:flex w-full' />
-                    <img src='/assets/mobileBackgroundSvg.svg' className='md:hidden w-full' />
+                    <img src={background} className='hidden md:flex w-full' />
+                    <img src={mobileBackground} className='md:hidden w-full' />
                     <div className=' flex flex-col items-center  pt-7 pb-2 px-4 top-0 pb-4 absolute tb:top-[50px] w-full'>
                         <div className='flex flex-row items-center justify-between w-[90%] mb-10 md:mb-[0px]'>
                             <div className='flex flex-row items-center space-x-3'>
@@ -44,7 +44,7 @@ function PageHero({ children, background }) {
                                     <img src='/assets/googleSvg.svg' className='h-[50px]' />
                                     <img src='/assets/starsSvg.svg' className='h-[23px] mr-2' />
                                 </div>
-                                <span className='text-white text-[13px] xs:mb-1'>4.5 rating of 25 reviews </span>
+                                <span className='text-white text-[13px] mt-[7px]  xs:mb-1'>4.5 rating of 25 reviews </span>
                             </div>
                             <div className='flex flex-col space-y-2 items-center w-full'>
                                 <span onClick={() => setMenuOpen(false)} className="text-[#FFF] font-medium text-[18px] mt-3 cursor-pointer border-hidden border-b-[3px] border-b-[#fff] hover:mb-[-3px] p-1 w-fit flex flex-col items-center">HOME</span>
@@ -77,13 +77,13 @@ function PageHero({ children, background }) {
 
                     <div className='w-full flex flex-col items-center justify-center pb-3 absolute bottom-0 px-4'>
                         <div className='flex md:hidden flex-row items-center justify-between space-x-2 mt-[10px] md:mt-[100px] tb:mt-[200px] w-full'>
-                            {!menuOpen && <BsChevronLeft size={25} className='border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' />}
+                            {!menuOpen && <BsChevronLeft size={25} className=' border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' />}
                             <div className='flex flex-row items-center space-x-3'>
                                 <img src='/assets/selectedEllipse.png' className='border-[1px] border-[#E8C229] rounded-[1000px] p-[3px]' />
                                 <img src='/assets/ellipse.png' className='' />
                                 <img src='/assets/ellipse.png' className='' />
                             </div>
-                            {!menuOpen && <BsChevronRight size={25} className='border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' />}
+                            {!menuOpen && <BsChevronRight size={25} className=' border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' />}
 
                         </div>
                     </div>

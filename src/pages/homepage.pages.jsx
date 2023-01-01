@@ -1,27 +1,63 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Footer from '../components/footer'
 import PageHero from '../components/pageHero'
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs"
+import { Carousel } from 'react-bootstrap'
 import RatingHeader from '../components/ratingHeader'
 
 const Homepage = () => {
+    const [slide, setSlide] = useState(2);
+    const Slide1 = () => (
+        <div className='self-center md:self-start md:ml-[40px]' >
+            <div className='self-center text-center md:text-start md:self-start  md:pl-20 mt-3 md:mt-7 w-full'>
+                <span className='text-white text-[35px] tb:text-[55px] font-bold leading-none'>ALL YOU NEED <br />TO BE EPIC</span>
+                <p className='md:max-w-[550px] text-[17px] md:text-[16px] text-white mt-10 px-0 md:px-[0px] md:mt-5'>If your skin has started to show wear and tear from sun, aging, acne or other skin conditions there is much that can be done.</p>
+            </div>
+            <div className='flex flex-col flex-wrap  items-center'>
+                <div className='flex flex-col md:flex-row flex-wrap  items-center w-full justify-center md:justify-start md:pl-20 mt-10 md:mt-10'>
+                    <button className='bg-white text-[#796AB8] rounded-lg py-3 px-7 w-[249.61px] border-[1px] md:border-[0] font-bold hover:bg-[#ddd] md:mr-[30px] mb-[30px]'>VIEW TREATMENTS</button>
+                    <button className='bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-[#fff] rounded-lg py-3 px-7 w-[249.61px] font-bold hover:bg-gradient-to-l md:mr-[30px] mb-[30px]'>VIEW PRODUCTS</button>
+                </div>
+            </div>
+        </div>
+    )
+
+    const Slide2 = () => (
+        <div className='self-center md:self-start md:ml-[40px]' >
+            <div className='self-center text-center md:text-start md:self-start  md:pl-20 mt-3 md:mt-7 w-full'>
+                <span className='text-white text-[35px] tb:text-[55px] font-bold leading-none'>PERFECTION <br />TO BE EPIC</span>
+                <p className='md:max-w-[550px] text-[17px] md:text-[16px] text-white mt-10 px-0 md:px-[0px] md:mt-5'>If your skin has started to show wear and tear from sun, aging, acne or other skin conditions there is much that can be done.</p>
+            </div>
+            <div className='flex flex-col flex-wrap  items-center'>
+                <div className='flex flex-col md:flex-row flex-wrap  items-center w-full justify-center md:justify-start md:pl-20 mt-10 md:mt-10'>
+                    <button className='bg-white text-[#796AB8] rounded-lg py-3 px-7 w-[249.61px] border-[1px] md:border-[0] font-bold hover:bg-[#ddd] md:mr-[30px] mb-[30px]'>VIEW TREATMENTS</button>
+                    <button className='bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-[#fff] rounded-lg py-3 px-7 w-[249.61px] font-bold hover:bg-gradient-to-l md:mr-[30px] mb-[30px]'>VIEW PRODUCTS</button>
+                </div>
+            </div>
+        </div>
+    )
     return (
         <div className='w-full bg-[#FAFAFA]'>
             <RatingHeader />
-            <PageHero>
-                <div className='self-center md:self-start md:ml-[40px]' >
-                    <div className='self-center text-center md:text-start md:self-start  md:pl-20 mt-3 md:mt-7 w-full'>
-                        <span className='text-white text-[35px] tb:text-[55px] font-bold leading-none'>ALL YOU NEED <br />TO BE EPIC</span>
-                        <p className='md:max-w-[550px] text-[17px] md:text-[16px] text-white mt-10 px-0 md:px-[0px] md:mt-5'>If your skin has started to show wear and tear from sun, aging, acne or other skin conditions there is much that can be done.</p>
+            <div id="carouselExampleControls" className="carousel slide" data-interval="7000" data-ride="carousel">
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
+                        <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg'>
+                            <Slide1 />
+                        </PageHero>
                     </div>
-                    <div className='flex flex-col flex-wrap  items-center'>
-                        <div className='flex flex-col md:flex-row flex-wrap  items-center w-full justify-center md:justify-start md:pl-20 mt-10 md:mt-10'>
-                            <button className='bg-white text-[#796AB8] rounded-lg py-3 px-7 w-[249.61px] border-[1px] md:border-[0] font-bold hover:bg-[#ddd] md:mr-[30px] mb-[30px]'>VIEW TREATMENTS</button>
-                            <button className='bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-[#fff] rounded-lg py-3 px-7 w-[249.61px] font-bold hover:bg-gradient-to-l md:mr-[30px] mb-[30px]'>VIEW PRODUCTS</button>
-                        </div>
+                    <div className="carousel-item">
+                        <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg'>
+                            <Slide2 />
+                        </PageHero>
                     </div>
                 </div>
-            </PageHero>
+                <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+
+                </a>
+                <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                </a>
+            </div>
             <div className='flex flex-col items-center md:mt-[80px] w-full'>
                 <section>
                     <div className='flex flex-col items-center mb-5'>
