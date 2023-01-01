@@ -75,7 +75,7 @@ function PageHero({ children, background }) {
                         {children}
                     </div>
 
-                    <div className='w-full flex flex-col items-center justify-center pb-5 absolute bottom-2 px-4'>
+                    <div className='w-full flex flex-col items-center justify-center pb-3 absolute bottom-0 px-4'>
                         <div className='flex md:hidden flex-row items-center justify-between space-x-2 mt-[10px] md:mt-[100px] tb:mt-[200px] w-full'>
                             {!menuOpen && <BsChevronLeft size={25} className='border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' />}
                             <div className='flex flex-row items-center space-x-3'>
