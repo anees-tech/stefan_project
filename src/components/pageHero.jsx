@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars } from "react-icons/fa"
-import { IoMdClose } from "react-icons/io"
+import { TfiClose } from "react-icons/tfi"
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs"
 
 
@@ -31,7 +31,7 @@ function PageHero({ children, background }) {
                                         <img src='/assets/ShoppingSvg.svg' />
                                         {!menuOpen ?
                                             <FaBars size={25} className="cursor-pointer" color='#fff' onClick={() => setMenuOpen(!menuOpen)} />
-                                            : <IoMdClose size={25} className="cursor-pointer" color='#fff' onClick={() => setMenuOpen(!menuOpen)} />
+                                            : <TfiClose size={25} className="cursor-pointer" color='#fff' onClick={() => setMenuOpen(!menuOpen)} />
                                         }
                                     </div>
                                 </div>
