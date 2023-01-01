@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Footer from '../components/footer'
 import PageHero from '../components/pageHero'
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs"
-import { Carousel } from 'react-bootstrap'
+import { FaBars } from "react-icons/fa"
+import { TfiClose } from "react-icons/tfi"
 import RatingHeader from '../components/ratingHeader'
 
 const Homepage = () => {
@@ -35,10 +36,54 @@ const Homepage = () => {
             </div>
         </div>
     )
+    const [menuOpen, setMenuOpen] = useState(false);
     return (
         <div className='w-full bg-[#FAFAFA]'>
             <RatingHeader />
-            <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg' />
+            <div className='flex flex-row items-center justify-between w-[90%] mb-10 md:mb-[0px]'>
+                <div className='flex flex-row items-center space-x-3'>
+                    <img src='/assets/logoSvg.svg' className='hidden tb:flex md:ml-[85px] ' />
+                    <span className='hidden tb:flex text-white font-medium text-[19px] '>TREATMENTS</span>
+                </div>
+                <div className='hidden tb:flex flex-row items-center space-x-4 md:mr-[85px] xxl:absolute right-[100px]'>
+                    <span className='text-white text-[16px] font-medium hover:cursor-pointer'>HOME</span>
+                    <span className='text-[#FFFFFF80] text-[16px] border-hidden border-b-[3px] border-b-[#fff] hover:border-solid hover:mb-[-3px] cursor-pointer'>TREATMENTS</span>
+                    <span className='text-[#FFFFFF80] text-[16px] border-hidden border-b-[3px] border-b-[#fff] hover:border-solid hover:mb-[-3px] cursor-pointer'>PRODUCTS</span>
+                    <span className='text-[#FFFFFF80] text-[16px] border-hidden border-b-[3px] border-b-[#fff] hover:border-solid hover:mb-[-3px] cursor-pointer'>CONTACT US</span>
+                    <span className='text-[#FFFFFF80] text-[16px] border-hidden border-b-[3px] border-b-[#fff] hover:border-solid hover:mb-[-3px] cursor-pointer'>FAQ</span>
+                </div>
+                <div className='bg-[#9686DA] tb:hidden flex flex-row items-center justify-between fixed top-0 left-0 z-20 pt-5 w-full' >
+                    <div className='absolute flex flex-row justify-between top-0 px-4 py-3 bg-[#6C5EA4] w-full'>
+                        <img src='/assets/logoSvg.svg' className=' tb:hidden' />
+                        <div className='tb:hidden flex flex-row items-center space-x-3 ' >
+                            <img src='/assets/ShoppingSvg.svg' />
+                            {!menuOpen ?
+                                <FaBars size={25} className="cursor-pointer" color='#fff' onClick={() => setMenuOpen(!menuOpen)} />
+                                : <TfiClose size={25} className="cursor-pointer" color='#fff' onClick={() => setMenuOpen(!menuOpen)} />
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="carouselExampleControls" className="relative carousel slide h-full" data-interval="7000" data-ride="carousel">
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
+                        <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg'>
+                            <Slide1 />
+                        </PageHero>
+                    </div>
+                    <div className="carousel-item">
+                        <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg'>
+                            <Slide2 />
+                        </PageHero>
+                    </div>
+                </div>
+                <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+
+                </a>
+                <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                </a>
+            </div>
             <div className='flex flex-col items-center md:mt-[80px] w-full'>
                 <section>
                     <div className='flex flex-col items-center mb-5'>
