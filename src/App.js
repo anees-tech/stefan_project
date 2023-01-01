@@ -1,15 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import RatingHeader from './components/ratingHeader';
-import PageHero from './components/pageHero';
 import Homepage from './pages/homepage.pages';
-import Footer from './components/footer';
+import { createContext, useState } from 'react';
+export const Context = createContext();
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div>
-      <Homepage />
-    </div>
+    <Context.Provider value={{
+      menuOpen, setMenuOpen
+    }}>
+      <div>
+        <Homepage />
+      </div>
+    </Context.Provider>
   );
 }
 
