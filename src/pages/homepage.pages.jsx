@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import PageHero from '../components/pageHero'
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs"
 import { Context } from '../App'
@@ -7,22 +7,13 @@ import PageContainer from '../components/pageContainer'
 
 const Homepage = () => {
     const { menuOpen } = useContext(Context);
-    const [slide, setSlide] = useState(1);
-    const slideTracker = (direction) => {
-        if (direction === "forward") {
-            if (slide >= 3) {
-                setSlide(1)
-            } else {
-                setSlide(slide + 1)
-            }
-        } else {
-            if (slide <= 1) {
-                setSlide(3)
-            } else {
-                setSlide(slide - 1)
-            }
-        }
-    }
+
+    const buttonRef = useRef(null);
+
+    useEffect(() => {
+        buttonRef.current.click();
+    }, []);
+
     const Slide1 = () => (
         <div className='self-center md:self-start md:ml-[40px]' >
             <div className='self-center text-center md:text-start md:self-start  md:pl-20 mt-3 md:mt-7 w-full'>
@@ -37,13 +28,13 @@ const Homepage = () => {
             </div>
             <div className='w-full flex flex-col items-center justify-center pb-3  px-3 absolute bottom-0'>
                 <div className='flex  flex-row items-center justify-between space-x-2 mt-[10px] md:mt-[100px] tb:mt-[200px] w-full'>
-                    {!menuOpen && <a><BsChevronLeft size={25} onClick={() => slideTracker("backward")} href="#carouselExampleControls" data-slide="prev" className='carousel-control-prev border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' /></a>}
+                    {!menuOpen && <a href="#carouselExampleControls" data-slide="prev" className='carousel-control-prev'><BsChevronLeft size={25} className=' border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' /></a>}
                     <div className='flex flex-row items-center space-x-3'>
                         <img src='/assets/selectedEllipse.png' className='border-[1px] border-[#E8C229] border-solid rounded-[50%] p-[2px]' />
                         <img src='/assets/ellipse.png' />
                         <img src='/assets/ellipse.png' />
                     </div>
-                    {!menuOpen && <a> <BsChevronRight size={25} onClick={() => slideTracker("forward")} href="#carouselExampleControls" data-slide="next" className='carousel-control-next border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' /></a>}
+                    {!menuOpen && <a ref={buttonRef} href="#carouselExampleControls" data-slide="next" className='carousel-control-next'> <BsChevronRight size={25} className='border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' /></a>}
 
                 </div>
             </div>
@@ -64,13 +55,13 @@ const Homepage = () => {
             </div>
             <div className='w-full flex flex-col items-center justify-center pb-3  px-4 absolute bottom-0'>
                 <div className='flex  flex-row items-center justify-between space-x-2 mt-[10px] md:mt-[100px] tb:mt-[200px] w-full'>
-                    {!menuOpen && <a><BsChevronLeft size={25} onClick={() => slideTracker("backward")} href="#carouselExampleControls" data-slide="prev" className='carousel-control-prev border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' /></a>}
+                    {!menuOpen && <a><BsChevronLeft size={25} href="#carouselExampleControls" data-slide="prev" className='carousel-control-prev border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' /></a>}
                     <div className='flex flex-row items-center space-x-3'>
                         <img src='/assets/ellipse.png' />
                         <img src='/assets/selectedEllipse.png' className='border-[1px] border-[#E8C229] border-solid rounded-[50%] p-[2px]' />
                         <img src='/assets/ellipse.png' />
                     </div>
-                    {!menuOpen && <a> <BsChevronRight size={25} onClick={() => slideTracker("forward")} href="#carouselExampleControls" data-slide="next" className='carousel-control-next border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' /></a>}
+                    {!menuOpen && <a> <BsChevronRight size={25} href="#carouselExampleControls" data-slide="next" className='carousel-control-next border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' /></a>}
 
                 </div>
             </div>
@@ -90,13 +81,13 @@ const Homepage = () => {
             </div>
             <div className='w-full flex flex-col items-center justify-center pb-3  px-4 absolute bottom-0'>
                 <div className='flex  flex-row items-center justify-between space-x-2 mt-[10px] md:mt-[100px] tb:mt-[200px] w-full'>
-                    {!menuOpen && <a><BsChevronLeft size={25} onClick={() => slideTracker("backward")} href="#carouselExampleControls" data-slide="prev" className='carousel-control-prev border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' /></a>}
+                    {!menuOpen && <a><BsChevronLeft size={25} href="#carouselExampleControls" data-slide="prev" className='carousel-control-prev border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' /></a>}
                     <div className='flex flex-row items-center space-x-3'>
                         <img src='/assets/ellipse.png' />
                         <img src='/assets/ellipse.png' />
                         <img src='/assets/selectedEllipse.png' className='border-[1px] border-[#E8C229] border-solid rounded-[50%] p-[2px]' />
                     </div>
-                    {!menuOpen && <a> <BsChevronRight size={25} onClick={() => slideTracker("forward")} href="#carouselExampleControls" data-slide="next" className='carousel-control-next border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' /></a>}
+                    {!menuOpen && <a> <BsChevronRight size={25} href="#carouselExampleControls" data-slide="next" className='carousel-control-next border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' /></a>}
 
                 </div>
             </div>
@@ -110,17 +101,17 @@ const Homepage = () => {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg'>
+                            <Slide3 />
+                        </PageHero>
+                    </div>
+                    <div className="carousel-item">
+                        <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg'>
                             <Slide1 />
                         </PageHero>
                     </div>
                     <div className="carousel-item">
                         <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg'>
                             <Slide2 />
-                        </PageHero>
-                    </div>
-                    <div className="carousel-item">
-                        <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg'>
-                            <Slide3 />
                         </PageHero>
                     </div>
                 </div>
