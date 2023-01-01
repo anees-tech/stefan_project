@@ -56,7 +56,7 @@ function PageHero({ children, background }) {
                                     <img src='/assets/facebookSvg.svg' />
                                     <img src='/assets/youtubeSvg.svg' />
                                 </div>
-                                <div className='flex flex-row justify-between items-center bg-[#6C5EA4] text-white text-[12px]  px-4 py-1 my-3 w-full'>
+                                <div className='flex flex-row flex-wrap justify-between items-center bg-[#6C5EA4] text-white text-[12px]  px-4 py-1 my-3 w-full'>
                                     <div className='flex flex-row space-x-3 items-center'>
                                         <img src='/assets/mailSvg.svg' className='hover:cursor-pointer' />
                                         <span className='hover:cursor-pointer' >support@aztreatments.com</span>
