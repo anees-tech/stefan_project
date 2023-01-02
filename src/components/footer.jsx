@@ -106,7 +106,7 @@ const Footer = () => {
                 className='hidden md:flex self-end absolute bottom-0 mr-[100px]'>
                 <img src='/assets/copyrightBackgroundSvg.svg' />
             </div>
-            <div className=' md:hidden bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-center p-5 w-full'>
+            <div className=' md:hidden bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-center p-3 w-full'>
                 <span className='text-[12px]'>Copyright © 2022 AZ Treatments Ltd, All Rights Reserved.</span>
             </div>
         </div>

@@ -97,7 +97,7 @@ const Homepage = () => {
 
     return (
         <PageContainer>
-            <div id="carouselExampleControls" className="relative carousel slide h-full" data-interval="7000" data-ride="carousel">
+            <div id="carouselExampleControls" className="relative carousel slide h-full" data-interval="7000" data-ride="carousel" data-pause="false">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg'>
