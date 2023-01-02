@@ -11,7 +11,14 @@ const Homepage = () => {
     const buttonRef = useRef(null);
 
     useEffect(() => {
-        buttonRef.current.click();
+        // const interval = setInterval(() => {
+        //     buttonRef.current.click();
+        // }, 7000);
+        // return () => clearInterval(interval);
+        const timer = setTimeout(() => {
+            buttonRef.current.click();
+        }, 7000)
+        return () => clearTimeout(timer);
     }, []);
 
     const Slide1 = () => (
@@ -97,7 +104,7 @@ const Homepage = () => {
 
     return (
         <PageContainer>
-            <div id="carouselExampleControls" className="relative carousel slide h-full" data-interval="7000" data-ride="carousel" data-pause="false">
+            <div id="carouselExampleControls" className="relative carousel slide h-full" data-interval="false" data-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg'>
