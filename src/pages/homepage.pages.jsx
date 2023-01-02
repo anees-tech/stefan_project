@@ -1,133 +1,138 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useContext } from 'react'
 import PageHero from '../components/pageHero'
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs"
 import { Context } from '../App'
-import { useContext } from 'react'
 import PageContainer from '../components/pageContainer'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import 'swiper/css';
+import { Autoplay } from "swiper";
+import { useSwiper } from 'swiper/react';
+
 
 const Homepage = () => {
     const { menuOpen } = useContext(Context);
 
-    const buttonRef = useRef(null);
 
-    useEffect(() => {
-        // const interval = setInterval(() => {
-        //     buttonRef.current.click();
-        // }, 7000);
-        // return () => clearInterval(interval);
-        const timer = setTimeout(() => {
-            buttonRef.current.click();
-        }, 7000)
-        return () => clearTimeout(timer);
-    }, []);
-
-    const Slide1 = () => (
-        <div className='self-center md:self-start md:ml-[40px]' >
-            <div className='self-center text-center md:text-start md:self-start  md:pl-20 mt-3 md:mt-7 w-full'>
-                <span className='text-white text-[35px] tb:text-[55px] font-bold leading-none'>ALL YOU NEED <br />TO BE EPIC</span>
-                <p className='md:max-w-[550px] text-[17px] md:text-[16px] text-white mt-10 px-4 md:px-[0px] md:mt-5'>If your skin has started to show wear and tear from sun, aging, acne or other skin conditions there is much that can be done.</p>
-            </div>
-            <div className='flex flex-col flex-wrap  items-center'>
-                <div className='flex flex-col md:flex-row flex-wrap  items-center w-full justify-center md:justify-start md:pl-20 mt-10 md:mt-10'>
-                    <button className='bg-white text-[#796AB8] rounded-lg py-3 px-7 w-[249.61px] border-[1px] md:border-[0] font-bold hover:bg-[#ddd] md:mr-[30px] mb-[30px]'>VIEW TREATMENTS</button>
-                    <button className='bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-[#fff] rounded-lg py-3 px-7 w-[249.61px] font-bold hover:bg-gradient-to-l md:mr-[30px] mb-[30px]'>VIEW PRODUCTS</button>
+    const Slide1 = () => {
+        const swiper = useSwiper();
+        return (
+            <div className='self-center md:self-start md:ml-[40px]' >
+                <div className='self-center text-center md:text-start md:self-start  md:pl-20 mt-3 md:mt-7 w-full'>
+                    <span className='text-white text-[35px] tb:text-[55px] font-bold leading-none'>ALL YOU NEED <br />TO BE EPIC</span>
+                    <p className='md:max-w-[550px] text-[17px] md:text-[16px] text-white mt-10 px-4 md:px-[0px] md:mt-5'>If your skin has started to show wear and tear from sun, aging, acne or other skin conditions there is much that can be done.</p>
                 </div>
-            </div>
-            <div className='w-full flex flex-col items-center justify-center pb-3  px-3 absolute bottom-0'>
-                <div className='flex  flex-row items-center justify-between space-x-2 mt-[10px] md:mt-[100px] tb:mt-[200px] w-full'>
-                    {!menuOpen && <a href="#carouselExampleControls" data-slide="prev" className='carousel-control-prev'><BsChevronLeft size={25} className=' border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' /></a>}
-                    <div className='flex flex-row items-center space-x-3'>
-                        <img src='/assets/selectedEllipse.png' className='border-[1px] border-[#E8C229] border-solid rounded-[50%] p-[2px]' />
-                        <img src='/assets/ellipse.png' />
-                        <img src='/assets/ellipse.png' />
+                <div className='flex flex-col flex-wrap  items-center'>
+                    <div className='flex flex-col md:flex-row flex-wrap  items-center w-full justify-center md:justify-start md:pl-20 mt-10 md:mt-10'>
+                        <button className='bg-white text-[#796AB8] rounded-lg py-3 px-7 w-[249.61px] border-[1px] md:border-[0] font-bold hover:bg-[#ddd] md:mr-[30px] mb-[30px]'>VIEW TREATMENTS</button>
+                        <button className='bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-[#fff] rounded-lg py-3 px-7 w-[249.61px] font-bold hover:bg-gradient-to-l md:mr-[30px] mb-[30px]'>VIEW PRODUCTS</button>
                     </div>
-                    {!menuOpen && <a ref={buttonRef} href="#carouselExampleControls" data-slide="next" className='carousel-control-next'> <BsChevronRight size={25} className='border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' /></a>}
-
                 </div>
-            </div>
-        </div>
-    )
+                <div className='w-full flex flex-col items-center justify-center pb-3  px-3 absolute bottom-0'>
+                    <div className='flex  flex-row items-center justify-between space-x-2 mt-[10px] md:mt-[100px] tb:mt-[200px] w-full'>
+                        {!menuOpen && <a onClick={() => swiper.slidePrev()} href="#carouselExampleControls" data-slide="prev" className='carousel-control-prev'><BsChevronLeft size={25} className=' border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' /></a>}
+                        <div className='flex flex-row items-center space-x-3'>
+                            <img src='/assets/selectedEllipse.png' className='border-[1px] border-[#E8C229] border-solid rounded-[50%] p-[2px]' />
+                            <img src='/assets/ellipse.png' />
+                            <img src='/assets/ellipse.png' />
+                        </div>
+                        {!menuOpen && <a onClick={() => swiper.slideNext()} href="#carouselExampleControls" data-slide="next" className='carousel-control-next'> <BsChevronRight size={25} className='border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' /></a>}
 
-    const Slide2 = () => (
-        <div className='self-center md:self-start md:ml-[40px]' >
-            <div className='self-center text-center md:text-start md:self-start  md:pl-20 mt-3 md:mt-7 w-full'>
-                <span className='text-white text-[35px] tb:text-[55px] font-bold leading-none'>PERFECTION <br />TO BE EPIC</span>
-                <p className='md:max-w-[550px] text-[17px] md:text-[16px] text-white mt-10 px-3 md:px-[0px] md:mt-5'>If your skin has started to show wear and tear from sun, aging, acne or other skin conditions there is much that can be done.</p>
-            </div>
-            <div className='flex flex-col flex-wrap  items-center'>
-                <div className='flex flex-col md:flex-row flex-wrap  items-center w-full justify-center md:justify-start md:pl-20 mt-10 md:mt-10'>
-                    <button className='bg-white text-[#796AB8] rounded-lg py-3 px-7 w-[249.61px] border-[1px] md:border-[0] font-bold hover:bg-[#ddd] md:mr-[30px] mb-[30px]'>VIEW TREATMENTS</button>
-                    <button className='bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-[#fff] rounded-lg py-3 px-7 w-[249.61px] font-bold hover:bg-gradient-to-l md:mr-[30px] mb-[30px]'>VIEW PRODUCTS</button>
-                </div>
-            </div>
-            <div className='w-full flex flex-col items-center justify-center pb-3  px-4 absolute bottom-0'>
-                <div className='flex  flex-row items-center justify-between space-x-2 mt-[10px] md:mt-[100px] tb:mt-[200px] w-full'>
-                    {!menuOpen && <a><BsChevronLeft size={25} href="#carouselExampleControls" data-slide="prev" className='carousel-control-prev border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' /></a>}
-                    <div className='flex flex-row items-center space-x-3'>
-                        <img src='/assets/ellipse.png' />
-                        <img src='/assets/selectedEllipse.png' className='border-[1px] border-[#E8C229] border-solid rounded-[50%] p-[2px]' />
-                        <img src='/assets/ellipse.png' />
                     </div>
-                    {!menuOpen && <a> <BsChevronRight size={25} href="#carouselExampleControls" data-slide="next" className='carousel-control-next border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' /></a>}
+                </div>
+            </div>
+        )
+    }
 
+    const Slide2 = () => {
+        const swiper = useSwiper();
+        return (
+            <div className='self-center md:self-start md:ml-[40px]' >
+                <div className='self-center text-center md:text-start md:self-start  md:pl-20 mt-3 md:mt-7 w-full'>
+                    <span className='text-white text-[35px] tb:text-[55px] font-bold leading-none'>PERFECTION <br />TO BE EPIC</span>
+                    <p className='md:max-w-[550px] text-[17px] md:text-[16px] text-white mt-10 px-3 md:px-[0px] md:mt-5'>If your skin has started to show wear and tear from sun, aging, acne or other skin conditions there is much that can be done.</p>
                 </div>
-            </div>
-        </div>
-    )
-    const Slide3 = () => (
-        <div className='self-center md:self-start md:ml-[40px]' >
-            <div className='self-center text-center md:text-start md:self-start  md:pl-20 mt-3 md:mt-7 w-full'>
-                <span className='text-white text-[35px] tb:text-[55px] font-bold leading-none'>PERFECTION <br />TO BE EPIC</span>
-                <p className='md:max-w-[550px] text-[17px] md:text-[16px] text-white mt-10 px-3 md:px-[0px] md:mt-5'>If your skin has started to show wear and tear from sun, aging, acne or other skin conditions there is much that can be done.</p>
-            </div>
-            <div className='flex flex-col flex-wrap  items-center'>
-                <div className='flex flex-col md:flex-row flex-wrap  items-center w-full justify-center md:justify-start md:pl-20 mt-10 md:mt-10'>
-                    <button className='bg-white text-[#796AB8] rounded-lg py-3 px-7 w-[249.61px] border-[1px] md:border-[0] font-bold hover:bg-[#ddd] md:mr-[30px] mb-[30px]'>VIEW TREATMENTS</button>
-                    <button className='bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-[#fff] rounded-lg py-3 px-7 w-[249.61px] font-bold hover:bg-gradient-to-l md:mr-[30px] mb-[30px]'>VIEW PRODUCTS</button>
-                </div>
-            </div>
-            <div className='w-full flex flex-col items-center justify-center pb-3  px-4 absolute bottom-0'>
-                <div className='flex  flex-row items-center justify-between space-x-2 mt-[10px] md:mt-[100px] tb:mt-[200px] w-full'>
-                    {!menuOpen && <a><BsChevronLeft size={25} href="#carouselExampleControls" data-slide="prev" className='carousel-control-prev border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' /></a>}
-                    <div className='flex flex-row items-center space-x-3'>
-                        <img src='/assets/ellipse.png' />
-                        <img src='/assets/ellipse.png' />
-                        <img src='/assets/selectedEllipse.png' className='border-[1px] border-[#E8C229] border-solid rounded-[50%] p-[2px]' />
+                <div className='flex flex-col flex-wrap  items-center'>
+                    <div className='flex flex-col md:flex-row flex-wrap  items-center w-full justify-center md:justify-start md:pl-20 mt-10 md:mt-10'>
+                        <button className='bg-white text-[#796AB8] rounded-lg py-3 px-7 w-[249.61px] border-[1px] md:border-[0] font-bold hover:bg-[#ddd] md:mr-[30px] mb-[30px]'>VIEW TREATMENTS</button>
+                        <button className='bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-[#fff] rounded-lg py-3 px-7 w-[249.61px] font-bold hover:bg-gradient-to-l md:mr-[30px] mb-[30px]'>VIEW PRODUCTS</button>
                     </div>
-                    {!menuOpen && <a> <BsChevronRight size={25} href="#carouselExampleControls" data-slide="next" className='carousel-control-next border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' /></a>}
+                </div>
+                <div className='w-full flex flex-col items-center justify-center pb-3  px-4 absolute bottom-0'>
+                    <div className='flex  flex-row items-center justify-between space-x-2 mt-[10px] md:mt-[100px] tb:mt-[200px] w-full'>
+                        {!menuOpen && <a onClick={() => swiper.slidePrev()} href="#carouselExampleControls" data-slide="prev" className='carousel-control-prev'><BsChevronLeft size={25} className=' border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' /></a>}
+                        <div className='flex flex-row items-center space-x-3'>
+                            <img src='/assets/ellipse.png' />
+                            <img src='/assets/selectedEllipse.png' className='border-[1px] border-[#E8C229] border-solid rounded-[50%] p-[2px]' />
+                            <img src='/assets/ellipse.png' />
+                        </div>
+                        {!menuOpen && <a onClick={() => swiper.slideNext()} href="#carouselExampleControls" data-slide="next" className='carousel-control-next'> <BsChevronRight size={25} className='border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' /></a>}
 
+                    </div>
                 </div>
             </div>
-        </div>
-    )
+        )
+    }
+    const Slide3 = () => {
+        const swiper = useSwiper();
+        return (
+            <div className='self-center md:self-start md:ml-[40px]' >
+                <div className='self-center text-center md:text-start md:self-start  md:pl-20 mt-3 md:mt-7 w-full'>
+                    <span className='text-white text-[35px] tb:text-[55px] font-bold leading-none'>AMAZEMENT <br />TO BE EPIC</span>
+                    <p className='md:max-w-[550px] text-[17px] md:text-[16px] text-white mt-10 px-3 md:px-[0px] md:mt-5'>If your skin has started to show wear and tear from sun, aging, acne or other skin conditions there is much that can be done.</p>
+                </div>
+                <div className='flex flex-col flex-wrap  items-center'>
+                    <div className='flex flex-col md:flex-row flex-wrap  items-center w-full justify-center md:justify-start md:pl-20 mt-10 md:mt-10'>
+                        <button className='bg-white text-[#796AB8] rounded-lg py-3 px-7 w-[249.61px] border-[1px] md:border-[0] font-bold hover:bg-[#ddd] md:mr-[30px] mb-[30px]'>VIEW TREATMENTS</button>
+                        <button className='bg-gradient-to-r from-[#E1C75C] to-[#C2A013] text-[#fff] rounded-lg py-3 px-7 w-[249.61px] font-bold hover:bg-gradient-to-l md:mr-[30px] mb-[30px]'>VIEW PRODUCTS</button>
+                    </div>
+                </div>
+                <div className='w-full flex flex-col items-center justify-center pb-3  px-4 absolute bottom-0'>
+                    <div className='flex  flex-row items-center justify-between space-x-2 mt-[10px] md:mt-[100px] tb:mt-[200px] w-full'>
+                        {!menuOpen && <a onClick={() => swiper.slidePrev()} href="#carouselExampleControls" data-slide="prev" className='carousel-control-prev'><BsChevronLeft size={25} className=' border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] hover:text-[#E8C229] navigationIcons mobile' /></a>}
+                        <div className='flex flex-row items-center space-x-3'>
+                            <img src='/assets/ellipse.png' />
+                            <img src='/assets/ellipse.png' />
+                            <img src='/assets/selectedEllipse.png' className='border-[1px] border-[#E8C229] border-solid rounded-[50%] p-[2px]' />
+                        </div>
+                        {!menuOpen && <a onClick={() => swiper.slideNext()} href="#carouselExampleControls" data-slide="next" className='carousel-control-next'> <BsChevronRight size={25} className='border-[1px] rounded-[50%] w-[40px] h-[40px] p-2 cursor-pointer hover:border-[#E8C229] navigationIcons mobile' /></a>}
+
+                    </div>
+                </div>
+            </div>
+        )
+    }
 
 
     return (
         <PageContainer>
-            <div id="carouselExampleControls" className="relative carousel slide h-full" data-interval="7000" data-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg'>
-                            <Slide3 />
-                        </PageHero>
-                    </div>
-                    <div className="carousel-item">
-                        <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg'>
-                            <Slide1 />
-                        </PageHero>
-                    </div>
-                    <div className="carousel-item">
-                        <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg'>
-                            <Slide2 />
-                        </PageHero>
-                    </div>
-                </div>
-                <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-
-                </a>
-                <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                </a>
-            </div>
+            <Swiper
+                autoplay={{
+                    delay: 7000,
+                    disableOnInteraction: false,
+                }}
+                loop={true}
+                modules={[Autoplay]}
+                className="mySwiper"
+            >
+                <SwiperSlide>
+                    <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg'>
+                        <Slide1 />
+                    </PageHero>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg'>
+                        <Slide2 />
+                    </PageHero>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <PageHero background='/assets/homepageHeroSvg.svg' mobileBackground='/assets/mobileBackgroundSvg.svg'>
+                        <Slide3 />
+                    </PageHero>
+                </SwiperSlide>
+            </Swiper>
             <div className='flex flex-col items-center md:mt-[80px] w-full'>
                 <section>
                     <div className='flex flex-col items-center mb-5'>
